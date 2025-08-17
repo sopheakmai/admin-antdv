@@ -1,0 +1,7 @@
+html {
+  font-family: "Google Sans Code", sans-serif !important;
+}
+
+html[lang="km"] {
+  font-family: "Kantumruy Pro", sans-serif !important;
+}
