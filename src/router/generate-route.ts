@@ -166,7 +166,6 @@ function checkComponent(component: RouteRecordRaw["component"]) {
   return component;
 }
 
-// Native JavaScript replacement for lodash omit function
 function omit<T extends Record<string, any>, K extends keyof T>(object: T, keys: K[]): Omit<T, K> {
   const result = { ...object };
   for (const key of keys) {
@@ -175,7 +174,6 @@ function omit<T extends Record<string, any>, K extends keyof T>(object: T, keys:
   return result;
 }
 
-// Route flattening processing
 function flatRoutes(routes: RouteRecordRaw[], parentName?: string, parentComps: RouteRecordRaw["component"][] = []) {
   const flatRouteData: RouteRecordRaw[] = [];
   for (const route of routes) {

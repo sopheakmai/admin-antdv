@@ -41,7 +41,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.1",
+    "@antfu/eslint-config": "^4.16.1",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@mistjs/vite-plugin-preload": "^0.0.1",
@@ -76,7 +76,6 @@
     "ts-node": "^10.9.2",
     "typescript": "~5.9.2",
     "unocss": "^66.4.2",
-    "unocss-preset-chinese": "^0.3.3",
     "unocss-preset-ease": "^0.0.4",
     "unplugin-auto-import": "^20.0.0",
     "unplugin-config": "^0.1.5",

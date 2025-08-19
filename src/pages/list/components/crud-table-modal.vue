@@ -4,7 +4,6 @@ import type { CrudTableModel } from "~@/api/list/crud-table";
 
 const emit = defineEmits(["cancel", "ok"]);
 
-// Native JavaScript replacement for lodash cloneDeep function
 function cloneDeep<T>(obj: T): T {
   if (obj === null || typeof obj !== "object")
     return obj;

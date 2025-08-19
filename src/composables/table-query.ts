@@ -1,7 +1,6 @@
 import type { PaginationProps } from "ant-design-vue";
 import type { TableRowSelection } from "ant-design-vue/es/table/interface";
 
-// Native JavaScript replacement for lodash assign function
 function assign<T extends Record<string, any>>(...sources: Partial<T>[]): T {
   return Object.assign({}, ...sources) as T;
 }

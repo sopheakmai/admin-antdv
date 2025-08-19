@@ -1,6 +1,5 @@
 import router from "@/router";
 
-// Native JavaScript replacement for lodash get function
 function get(object: any, path: string | string[], defaultValue?: any): any {
   const keys = Array.isArray(path) ? path : path.split(".");
   let result = object;

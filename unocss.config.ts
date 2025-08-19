@@ -7,7 +7,6 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import presetChinese from 'unocss-preset-chinese'
 import presetEase from 'unocss-preset-ease'
 import antdUnoTheme from './themes/antd-uno-theme.json'
 
@@ -22,7 +21,6 @@ export default defineConfig({
   presets: [
     presetWind3(),
     presetAttributify(),
-    presetChinese(),
     presetEase(),
     presetTypography(),
     presetIcons({
