@@ -1,0 +1,65 @@
+import type { App } from "vue";
+import type { I18n, I18nOptions } from "vue-i18n";
+import { createI18n } from "vue-i18n";
+
+// eslint-disable-next-line import/no-mutable-exports
+export let i18n: I18n;
+
+const defaultLoadLang = "zh-CN";
+
+async function createI18nOptions(): Promise<I18nOptions> {
+  const appStore = useAppStore();
+  const { locale } = storeToRefs(appStore);
+  // Extension can get language translation files from server side
+  let defaultLocal;
+  try {
+    defaultLocal = await import(`./lang/${locale.value}.ts`);
+  }
+  catch (e) {
+    defaultLocal = await import(`./lang/${defaultLoadLang}.ts`);
+  }
+  return {
+    legacy: false,
+    locale: locale.value,
+    fallbackLocale: "zh-CN",
+    messages: {
+      [locale.value]: defaultLocal.default,
+    },
+    sync: true,
+    silentTranslationWarn: true,
+    missingWarn: false,
+    silentFallbackWarn: true,
+  };
+}
+
+export async function setupI18n(app: App) {
+  const options = await createI18nOptions();
+  i18n = createI18n(options);
+  app.use(i18n);
+}
+
+/**
+ * Asynchronously load other languages
+ * @param locale Language type
+ * @returns Return parameters
+ */
+export async function loadLanguageAsync(locale: string) {
+  const current = unref(i18n.global.locale);
+  try {
+    if (current === locale)
+      return nextTick();
+    let messages;
+    try {
+      messages = await import(`./lang/${locale}.ts`);
+    }
+    catch (e) {
+      messages = await import(`./lang/${defaultLoadLang}.ts`);
+    }
+    if (messages)
+      i18n.global.setLocaleMessage(locale, messages.default);
+  }
+  catch (e) {
+    console.warn("load language error", e);
+  }
+  return nextTick();
+}
