@@ -34,16 +34,16 @@ export const useUserStore = defineStore("user", () => {
     return routerData.value;
   };
 
-  // 获取用户信息
+  // Get user information
   const getUserInfo = async () => {
-    // 获取用户信息
+    // Get user information
     const { data } = await getUserInfoApi();
     userInfo.value = data;
   };
 
   const logout = async () => {
     // Log out
-    // 1. 清空用户信息
+    // 1. Clear user information
     try {
       await logoutApi();
     }

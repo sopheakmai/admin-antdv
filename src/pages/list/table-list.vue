@@ -6,10 +6,10 @@ import type { ConsultTableModel, ConsultTableParams } from "~@/api/list/table-li
 import { deleteApi, getListApi } from "~@/api/list/table-list";
 
 const statusMap = {
-  0: "关闭",
-  1: "运行中",
-  2: "上线",
-  3: "错误",
+  0: "Close",
+  1: "Running",
+  2: "Online",
+  3: "Error",
 };
 const message = useMessage();
 const columns = shallowRef([
@@ -18,7 +18,7 @@ const columns = shallowRef([
     dataIndex: "id",
   },
   {
-    title: "规则名称",
+    title: "Rule name",
     dataIndex: "name",
   },
   {
@@ -35,12 +35,12 @@ const columns = shallowRef([
     width: 100,
   },
   {
-    title: "上次调度时间",
+    title: "Last scheduled time",
     dataIndex: "updatedAt",
     width: 200,
   },
   {
-    title: "操作",
+    title: "Action",
     dataIndex: "action",
     width: 200,
   },
@@ -73,18 +73,18 @@ const tableSize = ref<string[]>(["large"]);
 const sizeItems = ref<MenuProps["items"]>([
   {
     key: "large",
-    label: "默认",
-    title: "默认",
+    label: "Default",
+    title: "Default",
   },
   {
     key: "middle",
-    label: "中等",
-    title: "中等",
+    label: "Medium",
+    title: "Medium",
   },
   {
     key: "small",
-    label: "紧凑",
-    title: "紧凑",
+    label: "Compact",
+    title: "Compact",
   },
 ]);
 const open = ref(false);
@@ -144,12 +144,12 @@ async function onReset() {
 }
 
 /**
- * 删除功能
+ * Delete function
  *  @param record
  *
  */
 async function handleDelete(record: ConsultTableModel) {
-  const close = message.loading("删除中......");
+  const close = message.loading("Deleting......");
   try {
     const res = await deleteApi(record!.id);
     if (res.code === 200)
@@ -165,7 +165,7 @@ async function handleDelete(record: ConsultTableModel) {
 }
 
 /**
- * 新增事件
+ * Add event
  *
  */
 function handleOk() {
@@ -175,7 +175,7 @@ function handleOk() {
 }
 
 /**
- * 密度切换
+ * Density switch
  *
  */
 const handleSizeChange: MenuProps["onClick"] = (e) => {
@@ -183,7 +183,7 @@ const handleSizeChange: MenuProps["onClick"] = (e) => {
 };
 
 /**
- * 过滤
+ * Filter
  *
  */
 function filterAction(value: string[]) {
@@ -200,7 +200,7 @@ function filterAction(value: string[]) {
 const filterColumns = ref(filterAction(getCheckList.value));
 
 /**
- * 全选/反选事件
+ * Select all/Deselect event
  *
  */
 
@@ -221,7 +221,7 @@ watch(
 );
 
 /**
- * 重置事件
+ * Reset event
  *
  */
 function handleResetChange() {
@@ -230,7 +230,7 @@ function handleResetChange() {
 }
 
 /**
- * checkbox点击事件
+ * checkboxClick event
  *
  */
 function handleCheckChange(value: any) {
@@ -251,7 +251,7 @@ const expand = ref(false);
       <a-form :label-col="{ span: 7 }" :model="formModel">
         <a-row :gutter="[15, 0]">
           <a-col :span="8">
-            <a-form-item name="name" label="规则名称">
+            <a-form-item name="name" label="Rule name">
               <a-input v-model:value="formModel.name" />
             </a-form-item>
           </a-col>
@@ -273,16 +273,16 @@ const expand = ref(false);
                 v-model:value="formModel.status"
               >
                 <a-select-option value="0">
-                  关闭
+                  Close
                 </a-select-option>
                 <a-select-option value="1">
-                  运行中
+                  Running
                 </a-select-option>
                 <a-select-option value="2">
-                  上线
+                  Online
                 </a-select-option>
                 <a-select-option value="3">
-                  错误
+                  Error
                 </a-select-option>
               </a-select>
             </a-form-item>
@@ -297,13 +297,13 @@ const expand = ref(false);
           <a-col :span="24">
             <a-space w-full flex justify-end>
               <a-button :loading="loading" type="primary" @click="onSearch">
-                查询
+                Query
               </a-button>
               <a-button :loading="loading" @click="onReset">
-                重置
+                Reset
               </a-button>
               <a-button type="link" @click="expand = !expand">
-                {{ expand ? 'Collapse' : '展开' }}
+                {{ expand ? 'Collapse' : 'Expand' }}
                 <UpOutlined v-if="expand" />
                 <DownOutlined v-else />
               </a-button>
@@ -320,12 +320,12 @@ const expand = ref(false);
             <template #icon>
               <PlusOutlined />
             </template>
-            新增
+            Add
           </a-button>
-          <a-tooltip title="刷新">
+          <a-tooltip title="Refresh">
             <ReloadOutlined @click="onSearch" />
           </a-tooltip>
-          <a-tooltip title="密度">
+          <a-tooltip title="Density">
             <a-dropdown trigger="click">
               <ColumnHeightOutlined />
               <template #overlay>
@@ -333,19 +333,19 @@ const expand = ref(false);
               </template>
             </a-dropdown>
           </a-tooltip>
-          <a-tooltip title="列设置">
+          <a-tooltip title="Column settings">
             <a-dropdown v-model:open="dropdownVisible" trigger="click">
               <SettingOutlined />
               <template #overlay>
                 <a-card>
                   <template #title>
                     <a-checkbox v-model:checked="state.checkAll" :indeterminate="state.indeterminate" @change="handleCheckAllChange">
-                      列选择
+                      Column selection
                     </a-checkbox>
                   </template>
                   <template #extra>
                     <a-button type="link" @click="handleResetChange">
-                      重置
+                      Reset
                     </a-button>
                   </template>
                   <a-checkbox-group v-model:value="state.checkList" :options="options" style="display: flex; flex-direction: column;" @change="handleCheckChange" />
@@ -373,7 +373,7 @@ const expand = ref(false);
       </a-table>
     </a-card>
 
-    <a-modal v-model:open="open" title="新建规则" width="400px" @ok="handleOk">
+    <a-modal v-model:open="open" title="New rule" width="400px" @ok="handleOk">
       <a-space direction="vertical" size="large" class="w-full">
         <a-input placeholder="Please enter" />
         <a-textarea placeholder="Please enter" />

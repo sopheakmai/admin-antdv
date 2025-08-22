@@ -132,7 +132,7 @@ export function generateTreeRoutes(menus: MenuData) {
 }
 
 /**
- * 通过前端数据中的dynamic-routes动态生成菜单和数据
+ * Through the front-end data'sdynamic-routesDynamically generate menus and data
  */
 
 export async function generateRoutes() {
@@ -199,7 +199,7 @@ function flatRoutes(routes: RouteRecordRaw[], parentName?: string, parentComps: 
 
 export function generateFlatRoutes(routes: RouteRecordRaw[]) {
   const flatRoutesList = flatRoutes(routes);
-  // 拿到拉平后的路由，然后统一添加一个父级的路由,通过这层路由实现保活的功能
+  // 拿到拉平后的路由，然后统一添加一个父级的路由,Implement the keep-alive function through this layer of routing
   const parentRoute: RouteRecordRaw = {
     path: "/",
     redirect: ROOT_ROUTE_REDIRECT_PATH,

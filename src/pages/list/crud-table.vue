@@ -9,7 +9,7 @@ const message = useMessage();
 
 const columns = shallowRef([
   {
-    title: "名",
+    title: "Name",
     dataIndex: "name",
   },
   {
@@ -21,7 +21,7 @@ const columns = shallowRef([
     dataIndex: "remark",
   },
   {
-    title: "操作",
+    title: "Action",
     dataIndex: "action",
   },
 ]);
@@ -73,27 +73,27 @@ function handleEdit(record: CrudTableModel) {
       <a-form class="system-crud-wrapper" :label-col="{ span: 7 }" :model="state.queryParams">
         <a-row :gutter="[15, 0]">
           <a-col :span="6">
-            <a-form-item name="name" label="名">
-              <a-input v-model:value="state.queryParams.name" placeholder="请输入名" />
+            <a-form-item name="name" label="Name">
+              <a-input v-model:value="state.queryParams.name" placeholder="Please enter name" />
             </a-form-item>
           </a-col>
           <a-col :span="6">
             <a-form-item name="value" label="Value">
-              <a-input v-model:value="state.queryParams.value" placeholder="请输入值" />
+              <a-input v-model:value="state.queryParams.value" placeholder="Please enter value" />
             </a-form-item>
           </a-col>
           <a-col :span="6">
             <a-form-item name="remark" label="Notes">
-              <a-input v-model:value="state.queryParams.remark" placeholder="请输入备注" />
+              <a-input v-model:value="state.queryParams.remark" placeholder="Please enter notes" />
             </a-form-item>
           </a-col>
           <a-col :span="6">
             <a-space w-full flex justify-end>
               <a-button :loading="state.loading" type="primary" @click="initQuery">
-                查询
+                Query
               </a-button>
               <a-button :loading="state.loading" @click="resetQuery">
-                重置
+                Reset
               </a-button>
             </a-space>
           </a-col>
@@ -108,7 +108,7 @@ function handleEdit(record: CrudTableModel) {
             <template #icon>
               <PlusOutlined />
             </template>
-            新增
+            Add
           </a-button>
         </a-space>
       </template>
@@ -120,10 +120,10 @@ function handleEdit(record: CrudTableModel) {
           <template v-if="scope?.column?.dataIndex === 'action'">
             <div flex gap-2>
               <a-button type="link" @click="handleEdit(scope?.record as CrudTableModel)">
-                编辑
+                Edit
               </a-button>
               <a-popconfirm
-                title="确定删除该条数据？" ok-text="确定" cancel-text="取消"
+                title="确定删除该条数据？" ok-text="OK" cancel-text="Cancel"
                 @confirm="handleDelete(scope?.record as CrudTableModel)"
               >
                 <a-button type="link">

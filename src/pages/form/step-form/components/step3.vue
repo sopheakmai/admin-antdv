@@ -12,11 +12,11 @@ function toOrderList() {
 <template>
   <div>
     <a-form>
-      <a-result title="操作成功" :is-success="true" sub-title="预计两小时内到账" style="max-width: 560px; margin: 40px auto 0;">
+      <a-result title="Operation successful" :is-success="true" sub-title="Expected to arrive within two hours" style="max-width: 560px; margin: 40px auto 0;">
         <div class="information">
           <a-row>
             <a-col :sm="8" :xs="24">
-              付款账户：
+              Payer's account：
             </a-col>
             <a-col :sm="16" :xs="24">
               antdv@aibayanyu.com
@@ -24,7 +24,7 @@ function toOrderList() {
           </a-row>
           <a-row>
             <a-col :sm="8" :xs="24">
-              收款账户：
+              Payee's account：
             </a-col>
             <a-col :sm="16" :xs="24">
               test@example.com
@@ -32,7 +32,7 @@ function toOrderList() {
           </a-row>
           <a-row>
             <a-col :sm="8" :xs="24">
-              收款人姓名：
+              Payee's name：
             </a-col>
             <a-col :sm="16" :xs="24">
               Kirk Lin
@@ -40,7 +40,7 @@ function toOrderList() {
           </a-row>
           <a-row>
             <a-col :sm="8" :xs="24">
-              转账金额：
+              Transfer amount：
             </a-col>
             <a-col :sm="16" :xs="24">
               <span class="money">1,000,000</span> yuan
@@ -49,10 +49,10 @@ function toOrderList() {
         </div>
         <template #extra>
           <a-button type="primary" @click="finish">
-            再转一笔
+            Transfer again
           </a-button>
           <a-button style="margin-left: 8px" @click="toOrderList">
-            查看账单
+            View bill
           </a-button>
         </template>
       </a-result>

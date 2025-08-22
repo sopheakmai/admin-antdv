@@ -36,39 +36,39 @@ defineExpose({
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
           name="name"
-          :rules="[{ required: true, message: '请输入仓库名称' }]"
-          label="仓库名"
+          :rules="[{ required: true, message: 'Please enter warehouse name' }]"
+          label="Warehouse name"
         >
-          <a-input v-model:value="formState.name" placeholder="请输入仓库名称" />
+          <a-input v-model:value="formState.name" placeholder="Please enter warehouse name" />
         </a-form-item>
       </a-col>
       <a-col :xl="{ span: 7, offset: 1 }" :lg="{ span: 8 }" :md="{ span: 12 }" :sm="24">
         <a-form-item
           name="url"
-          :rules="[{ required: true, message: '请输入仓库地址' }]"
-          label="仓库地址"
+          :rules="[{ required: true, message: 'Please enter warehouse address' }]"
+          label="Warehouse address"
         >
-          <a-input v-model:value="formState.url" placeholder="请输入仓库地址" />
+          <a-input v-model:value="formState.url" placeholder="Please enter warehouse address" />
         </a-form-item>
       </a-col>
       <a-col :xl="{ span: 9, offset: 1 }" :lg="{ span: 10 }" :md="{ span: 24 }" :sm="24">
         <a-form-item
           name="owner"
-          :rules="[{ required: true, message: '请选择管理员' }]"
-          label="仓库管理员"
+          :rules="[{ required: true, message: 'Please select administrator' }]"
+          label="Warehouse administrator"
         >
           <a-select
             v-model:value="formState.owner"
-            placeholder="请选择管理员"
+            placeholder="Please select administrator"
           >
-            <a-select-option value="林同学">
-              林同学
+            <a-select-option value="Student Lin">
+              Student Lin
             </a-select-option>
-            <a-select-option value="张同学">
-              张同学
+            <a-select-option value="Student Zhang">
+              Student Zhang
             </a-select-option>
-            <a-select-option value="李同学">
-              李同学
+            <a-select-option value="Student Li">
+              Student Li
             </a-select-option>
           </a-select>
         </a-form-item>
@@ -78,12 +78,12 @@ defineExpose({
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
           name="approver"
-          :rules="[{ required: true, message: '请选择审批员' }]"
-          label="审批人"
+          :rules="[{ required: true, message: 'Please select approver' }]"
+          label="Approver"
         >
           <a-select
             v-model:value="formState.approver"
-            placeholder="请选择审批员"
+            placeholder="Please select approver"
           >
             <a-select-option value="Kirk Lin">
               Kirk Lin
@@ -97,7 +97,7 @@ defineExpose({
       <a-col :xl="{ span: 7, offset: 1 }" :lg="{ span: 8 }" :md="{ span: 12 }" :sm="24">
         <a-form-item
           name="dateRange"
-          :rules="[{ required: true, message: '请选择生效日期' }]"
+          :rules="[{ required: true, message: 'Please select effective date' }]"
           label="Effective date"
         >
           <a-time-picker
@@ -109,18 +109,18 @@ defineExpose({
       <a-col :xl="{ span: 9, offset: 1 }" :lg="{ span: 10 }" :md="{ span: 24 }" :sm="24">
         <a-form-item
           name="type"
-          :rules="[{ required: true, message: '请选择仓库类型' }]"
-          label="仓库类型"
+          :rules="[{ required: true, message: 'Please select warehouse type' }]"
+          label="Warehouse type"
         >
           <a-select
             v-model:value="formState.type"
-            placeholder="请选择仓库类型"
+            placeholder="Please select warehouse type"
           >
             <a-select-option value="Public">
               Public
             </a-select-option>
-            <a-select-option value="私密">
-              私密
+            <a-select-option value="Private">
+              Private
             </a-select-option>
           </a-select>
         </a-form-item>

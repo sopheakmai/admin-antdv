@@ -43,7 +43,7 @@ const data = ref([
       <a-row :gutter="16">
         <a-col :xs="16" :sm="8" :md="6" :lg="6" :xl="6" class="mb-4">
           <a-button class="h-204px w-1/1" type="dashed">
-            +新增产品
+            +New product
           </a-button>
         </a-col>
         <a-col v-for="(item, index) in data" :key="index" :xs="16" :sm="8" :md="6" :lg="6" :xl="6" class="mb-4">

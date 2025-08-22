@@ -29,7 +29,7 @@ function prevStep() {
         style="margin-bottom: 24px;"
       />
       <a-form-item
-        label="付款账户"
+        label="Payer's account"
         :label-col="labelCol"
         :wrapper-col="wrapperCol"
         class="stepFormText"
@@ -37,7 +37,7 @@ function prevStep() {
         antdv@aibayanyu.com
       </a-form-item>
       <a-form-item
-        label="收款账户"
+        label="Payee's account"
         :label-col="labelCol"
         :wrapper-col="wrapperCol"
         class="stepFormText"
@@ -45,7 +45,7 @@ function prevStep() {
         test@example.com
       </a-form-item>
       <a-form-item
-        label="收款人姓名"
+        label="Payee's name"
         :label-col="labelCol"
         :wrapper-col="wrapperCol"
         class="stepFormText"
@@ -53,7 +53,7 @@ function prevStep() {
         Kirk Lin
       </a-form-item>
       <a-form-item
-        label="转账金额"
+        label="Transfer amount"
         :label-col="labelCol"
         :wrapper-col="wrapperCol"
         class="stepFormText"
@@ -62,12 +62,12 @@ function prevStep() {
       </a-form-item>
       <a-divider />
       <a-form-item
-        label="支付密码"
+        label="Payment password"
         :label-col="labelCol"
         :wrapper-col="wrapperCol"
         class="stepFormText"
         name="paymentPassword"
-        :rules="[{ required: true, message: '需要支付密码才能进行支付' }]"
+        :rules="[{ required: true, message: 'Payment password is required to pay' }]"
       >
         <a-input
           v-model:value="formState.paymentPassword"
@@ -80,7 +80,7 @@ function prevStep() {
           Submit
         </a-button>
         <a-button style="margin-left: 8px" @click="prevStep">
-          上一步
+          Previous step
         </a-button>
       </a-form-item>
     </a-form>

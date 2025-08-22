@@ -6,13 +6,7 @@
     "lokalise.i18n-ally",
     "antfu.goto-alias",
     "johnsoncodehk.volarjs-labs",
-
-    // themes & icons
-    "antfu.icons-carbon",
-    "antfu.theme-vitesse",
-    "sainnhe.gruvbox-material",
-    "vscode-icons-team.vscode-icons",
-
+    
     // life savers!
     "dbaeumer.vscode-eslint",
     "Vue.volar",

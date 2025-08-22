@@ -10,7 +10,7 @@ export type MultiTabItem = {
   name?: string;
   icon?: string;
   locale?: string;
-  // 判断当前是不是一个固定的标签
+  // Determine if the current one is a fixed tag
   affix?: boolean;
   loading?: boolean;
 };
@@ -32,9 +32,9 @@ export const useMultiTab = defineStore("multi-tab", () => {
       return;
     if (allowList.includes(route.path))
       return;
-    // 设置当前的loadingisfalse
+    // Set the currentloadingisfalse
     if (refreshItem.value) {
-      // 增加一个取消的延迟
+      // Add a cancellation delay
       setTimeout(() => {
         if (refreshItem.value) {
           refreshItem.value.loading = false;
@@ -67,14 +67,14 @@ export const useMultiTab = defineStore("multi-tab", () => {
   };
 
   const close = (key: string) => {
-    // 判断长度是不是小于等于1，如果是那么这个就不能被关闭
+    // Determine if the length is less than or equal to1，如果是那么这个就不能被关闭
     if (list.value.length <= 1) {
-      message.error("不能关闭最后一个标签页");
+      message.error("Cannot close the last tab");
       return;
     }
     const index = list.value.findIndex(item => item.fullPath === key);
     if (index < 0) {
-      message.error("当前页签不存在无法关闭");
+      message.error("The current tab does not exist and cannot be closed");
       return;
     }
     const item = list.value[index];
@@ -84,7 +84,7 @@ export const useMultiTab = defineStore("multi-tab", () => {
       activeKey.value = newItem.fullPath;
       router.push(newItem.fullPath);
     }
-    // 去除缓存
+    // Remove cache
     if (appStore.layoutSetting.keepAlive && item.name)
       cacheList.value = cacheList.value.filter(name => name !== item.name);
 

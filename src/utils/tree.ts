@@ -2,9 +2,9 @@ type Tree = {
   children?: Tree[];
 };
 /**
- * 递归查找树节点
- * @param pred 查找条件函数
- * @returns 树节点
+ * Recursively find tree node
+ * @param pred Search condition function
+ * @returns Tree node
  */
 export function deepFind(pred: (o: any) => boolean) {
   return ([x, ...xs] = [] as Tree[]): Tree =>

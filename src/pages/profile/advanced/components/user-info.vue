@@ -8,7 +8,7 @@ const { t } = useI18n();
   <a-card :bordered="false" class="my-6">
     <a-descriptions :title="t('profile.basic.customerInfoTitle')">
       <a-descriptions-item :label="t('profile.basic.customerName')">
-        张三
+        Zhang San
       </a-descriptions-item>
       <a-descriptions-item :label="t('profile.advanced.card')">
         xxx
@@ -20,7 +20,7 @@ const { t } = useI18n();
         16866666666
       </a-descriptions-item>
       <a-descriptions-item :label="t('profile.basic.deliveryAddress')">
-        张三 16866666666 广东省广州市
+        Zhang San 16866666666 Guangzhou, Guangdong Province
       </a-descriptions-item>
     </a-descriptions>
     <a-divider style="margin-bottom: 32px" />

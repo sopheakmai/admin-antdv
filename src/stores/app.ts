@@ -101,7 +101,7 @@ export const useAppStore = defineStore("app", () => {
       themeConfig.token.colorPrimary = color;
   };
 
-  // 监听isDark的变化
+  // Listen forisDarkchanges
   watch(
     isDark,
     () => {
@@ -115,7 +115,7 @@ export const useAppStore = defineStore("app", () => {
     },
   );
 
-  // 监听isDark的变化
+  // Listen forisDarkchanges
   watch(preferredLanguages, () => {
     toggleLocale(preferredLanguages.value[0]);
   });

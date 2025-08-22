@@ -33,8 +33,8 @@ function finish() {
     </template>
     <a-card :bordered="false">
       <a-steps class="steps" :current="state.currentTab">
-        <a-step title="填写转账信息" />
-        <a-step title="确认转账信息" />
+        <a-step title="Fill in transfer information" />
+        <a-step title="Confirm transfer information" />
         <a-step title="Complete" />
       </a-steps>
       <div class="content">

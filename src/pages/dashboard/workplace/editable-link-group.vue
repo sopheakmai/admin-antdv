@@ -15,15 +15,15 @@ const links = [
     href: "",
   },
   {
-    title: "操作四",
+    title: "Operation four",
     href: "",
   },
   {
-    title: "操作五",
+    title: "Operation five",
     href: "",
   },
   {
-    title: "操作六",
+    title: "Operation six",
     href: "",
   },
 ];
@@ -35,7 +35,7 @@ const links = [
       {{ item.title }}
     </router-link>
     <a-button size="small" type="primary" ghost>
-      <PlusOutlined /> 添加
+      <PlusOutlined /> Add
     </a-button>
   </div>
 </template>

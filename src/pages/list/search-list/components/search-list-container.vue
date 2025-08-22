@@ -13,7 +13,7 @@ function handleChangePage(key: any) {
       <div class="flex items-center justify-center">
         <a-input-search
           placeholder="Please enter"
-          enter-button="搜索"
+          enter-button="Search"
           style="width: 300px"
         />
       </div>

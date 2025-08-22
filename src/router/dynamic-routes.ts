@@ -430,7 +430,7 @@ export default [
         name: "AccountCenter",
         component: () => import("~/pages/account/center.vue"),
         meta: {
-          title: "个人主页",
+          title: "Personal homepage",
           locale: "menu.account.center",
         },
       },

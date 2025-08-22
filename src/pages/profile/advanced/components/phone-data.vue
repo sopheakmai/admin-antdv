@@ -10,25 +10,25 @@ type PhoneItem = {
 
 const phoneDate = ref<PhoneItem[]>([
   {
-    name: "张三",
+    name: "Zhang San",
     phone: "16866666666",
     spentTime: "30min",
     date: "2022-7-10 14:20",
   },
   {
-    name: "张三",
+    name: "Zhang San",
     phone: "16866666666",
     spentTime: "99min",
     date: "2022-7-6 16:00",
   },
   {
-    name: "张三",
+    name: "Zhang San",
     phone: "16866666666",
     spentTime: "20min",
     date: "2022-7-3 9:20",
   },
   {
-    name: "张三",
+    name: "Zhang San",
     phone: "16866666666",
     spentTime: "80min",
     date: "2022-6-20 9:50",

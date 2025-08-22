@@ -1,4 +1,3 @@
-// 页面气泡效果
 const bubble: {
   width: number;
   height: number;

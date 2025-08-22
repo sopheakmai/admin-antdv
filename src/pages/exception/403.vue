@@ -59,7 +59,7 @@ const startTimeLoading = () => {
 
 <template>
   <div>
-    <a-card title="指令方式加载loading" :hoverable="true" :bordered="false">
+    <a-card title="Load by commandloading" :hoverable="true" :bordered="false">
       <div
         v-loading="loading"
         class="relative w-full h-[150px]"
@@ -69,26 +69,26 @@ const startTimeLoading = () => {
       >
         <a-space :size="15">
           <a-button type="primary" @click="startCustomLoading(1)">
-            v-loading指令全屏
+            v-loadingFull screen command
           </a-button>
           <a-button type="primary" @click="startCustomLoading(2)">
-            v-loading指令非全屏
+            v-loadingNon-full screen command
           </a-button>
         </a-space>
       </div>
     </a-card>
-    <a-card title="hook加载loading" hoverable :bordered="false" mt-3>
+    <a-card title="hookLoadloading" hoverable :bordered="false" mt-3>
       <a-space :size="15">
         <a-button v-for="(item, index) in loadingList" :key="item" type="primary" @click="startLoading(item)">
           loading{{ index + 1 }}
         </a-button>
       </a-space>
     </a-card>
-    <a-card title="hooloading最小时长" hoverable :bordered="false" mt-3>
+    <a-card title="hooloadingMinimum duration" hoverable :bordered="false" mt-3>
       <a-space :size="15">
         <a-input-number v-model:value="time" />
         <a-button type="primary" @click="startTimeLoading">
-          点击触发loading
+          Click to triggerloading
         </a-button>
       </a-space>
     </a-card>

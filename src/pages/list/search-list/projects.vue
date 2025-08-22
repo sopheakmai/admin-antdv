@@ -4,7 +4,7 @@ import Category from "./components/category.vue";
 const list = [
   {
     id: "fake-list-0",
-    owner: "付小小",
+    owner: "Fu Xiaoxiao",
     title: "Alipay",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/uMfMFlvUuceEyPpotzlq.png",
@@ -25,24 +25,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-1",
-    owner: "曲丽丽",
+    owner: "Qu Lili",
     title: "Angular",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/iZBVOIhGJiAnhplqjvZW.png",
@@ -63,24 +63,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-2",
-    owner: "林东东",
+    owner: "Lin Dongdong",
     title: "Ant Design",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/dURIMkkrRFpPgTuzkwnB.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/iXjVmWVHbCJAyqvDxdtx.png",
@@ -101,24 +101,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-3",
-    owner: "周星星",
+    owner: "Zhou Xingxing",
     title: "Ant Design Pro",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/sfjbOqnsXXJgNCjCzDBL.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/gLaIAoVWTtLbBWZNYEMg.png",
@@ -139,24 +139,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-4",
-    owner: "吴加好",
+    owner: "Wu Jiahao",
     title: "Bootstrap",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/siCrBXXhmvTQGWPNLBow.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/gLaIAoVWTtLbBWZNYEMg.png",
@@ -177,24 +177,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-5",
-    owner: "朱偏右",
+    owner: "Zhu Pianyou",
     title: "React",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/iXjVmWVHbCJAyqvDxdtx.png",
@@ -215,24 +215,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-6",
-    owner: "鱼酱",
+    owner: "Fish sauce",
     title: "Vue",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/iZBVOIhGJiAnhplqjvZW.png",
@@ -253,24 +253,24 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
   },
   {
     id: "fake-list-7",
-    owner: "乐哥",
+    owner: "Brother Le",
     title: "Webpack",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/nxkuOJlFJuAUhzlMTCEe.png",
     cover: "https://gw.alipayobjects.com/zos/rmsportal/uMfMFlvUuceEyPpotzlq.png",
@@ -291,17 +291,17 @@ const list = [
     members: [
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/ZiESqWwCXBRQoaPONSJe.png",
-        name: "曲丽丽",
+        name: "Qu Lili",
         id: "member1",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/tBOxZPlITHqwlGjsJWaF.png",
-        name: "王昭君",
+        name: "Wang Zhaojun",
         id: "member2",
       },
       {
         avatar: "https://gw.alipayobjects.com/zos/rmsportal/sBxjgqiuHMGRkIjqlQCd.png",
-        name: "董娜娜",
+        name: "Dong Nana",
         id: "member3",
       },
     ],
@@ -331,7 +331,7 @@ const list = [
                 </template>
               </a-card-meta>
               <div class="mb--4px mt-16px h-20px flex justify-between line-height-20px">
-                <span c-text-tertiary>19 分钟前</span>
+                <span c-text-tertiary>19 minutes ago</span>
                 <div>
                   <!--                  -->
                   <a-avatar-group>

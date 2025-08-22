@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const number = ["一", "二", "三", "四", "五", "六", "七", "Eight", "九", "十", "十一", "十二"];
+const number = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
 
 type ListType = {
   name: string;
@@ -7,11 +7,11 @@ type ListType = {
 };
 const list = shallowRef<ListType[]>([
   {
-    name: "全部",
+    name: "All",
     key: "all",
   },
   ...number.map((v, index) => ({
-    name: `类目${v}`,
+    name: `Category${v}`,
     key: `category${index + 1}`,
   })),
 ]);
@@ -19,51 +19,51 @@ const activeList = ref<string[]>([]);
 function handleClick(item: ListType) {
   if (item.key === "all") {
     if (activeList.value.includes("all")) {
-      // 删除全部选中
+      // Delete all selected
       activeList.value = [];
       return;
     }
     else {
-      // 全部选中
+      // Select all
       activeList.value = list.value.map(v => v.key);
     }
     return;
   }
   if (activeList.value.includes(item.key)) {
-    // 删除当前选中
+    // Delete current selection
     activeList.value = activeList.value.filter(v => v !== item.key);
     if (activeList.value.includes("all")) {
-      // 删除全部选中
+      // Delete all selected
       activeList.value = activeList.value.filter(v => v !== "all");
     }
   }
   else {
-    // 添加当前选中
+    // Add current selection
     activeList.value = [...activeList.value, item.key];
     if (activeList.value.length === list.value.length - 1) {
-      // 全部选中
+      // Select all
       activeList.value = [...activeList.value, "all"];
     }
   }
 }
 const authorList = shallowRef([
   {
-    label: "付晓晓",
-    value: "付晓晓",
+    label: "Fu Xiaoxiao",
+    value: "Fu Xiaoxiao",
   },
   {
-    label: "周毛毛",
-    value: "周毛毛",
+    label: "Zhou Maomao",
+    value: "Zhou Maomao",
   },
 ]);
-// 好评度
+// Rating
 const praiseList = shallowRef([
   {
-    label: "优秀",
+    label: "Excellent",
     value: 1,
   },
   {
-    label: "普通",
+    label: "Normal",
     value: 2,
   },
 ]);
@@ -72,7 +72,7 @@ const praiseList = shallowRef([
 <template>
   <a-card :bordered="false">
     <a-form>
-      <a-form-item label="所属类目">
+      <a-form-item label="Category">
         <div class="flex flex-wrap gap-2">
           <a-tag
             v-for="item in list"
@@ -86,14 +86,14 @@ const praiseList = shallowRef([
         </div>
       </a-form-item>
       <a-divider dashed />
-      <a-form-item label="其他选项">
+      <a-form-item label="Other options">
         <a-form-item-rest>
           <div class="category-other-item flex gap-4">
-            <a-form-item label="作者">
-              <a-select placeholder="不限" style="width: 100px" :options="authorList" />
+            <a-form-item label="Author">
+              <a-select placeholder="Unlimited" style="width: 100px" :options="authorList" />
             </a-form-item>
-            <a-form-item label="好评度">
-              <a-select placeholder="不限" style="width: 100px" :options="praiseList" />
+            <a-form-item label="Rating">
+              <a-select placeholder="Unlimited" style="width: 100px" :options="praiseList" />
             </a-form-item>
           </div>
         </a-form-item-rest>

@@ -10,16 +10,16 @@ import VirtualList from "@/components/virtual-list/index.vue";
 
 const workData = ref([
   {
-    title: "我的待办",
-    content: "8个任务",
+    title: "My tasks",
+    content: "8tasks",
   },
   {
-    title: "本周任务平均处理时间",
-    content: "32分钟",
+    title: "Average task processing time this week",
+    content: "32minutes",
   },
   {
-    title: "本周完成任务数",
-    content: "24个任务",
+    title: "Number of tasks completed this week",
+    content: "24tasks",
   },
 ]);
 
@@ -41,7 +41,7 @@ const pagination = ref({
 });
 
 /*
-  获取数据
+  Get data
 */
 async function getList() {
   const data = await getListApi();
@@ -51,15 +51,15 @@ async function getList() {
 }
 
 /*
-  处理删除对话框
+  Handle delete dialog
 */
 function showConfirm(index: number) {
   Modal.confirm({
-    title: "删除任务",
+    title: "Delete task",
     icon: createVNode(ExclamationCircleOutlined),
-    content: createVNode("div", { }, "确定要删除该任务吗?"),
-    cancelText: "取消",
-    okText: "确认",
+    content: createVNode("div", { }, "Are you sure you want to delete this task??"),
+    cancelText: "Cancel",
+    okText: "Confirm",
     onOk() {
       dataSource.value.splice(index, 1);
     },
@@ -68,7 +68,7 @@ function showConfirm(index: number) {
 }
 
 /*
-  处理编辑弹框
+  Handle edit modal
 */
 type FormState = {
   title: string;
@@ -90,7 +90,7 @@ const openModalValue = ref(false);
 
 const isAdd = ref<boolean>(false);
 
-// 打开对话框
+// Open dialog
 function openModal(item: any, charge?: boolean) {
   if (charge) {
     isAdd.value = true;
@@ -106,17 +106,17 @@ function openModal(item: any, charge?: boolean) {
   }
 }
 
-// 操作成功后操作
+// Action after successful operation
 function countDown() {
   let secondsToGo = 2;
   const modal = Modal.success({
-    title: "操作成功",
-    content: `本窗口将在${secondsToGo}后自动关闭`,
+    title: "Operation successful",
+    content: `This window will close automatically in${secondsToGo}后自动关闭`,
   });
   const interval = setInterval(() => {
     secondsToGo -= 1;
     modal.update({
-      content: `本窗口将在${secondsToGo}后自动关闭`,
+      content: `This window will close automatically in${secondsToGo}后自动关闭`,
     });
   }, 1000);
   setTimeout(() => {
@@ -125,7 +125,7 @@ function countDown() {
   }, secondsToGo * 1000);
 }
 
-// 确定 处理编辑或添加
+// OK Handle editing or adding
 function handleOk() {
   for (const item in formState) {
     if (item !== "index") {
@@ -160,7 +160,7 @@ function handleOk() {
   countDown();
 }
 
-// 关闭对话框后操作
+// Action after closing the dialog
 function cancelModal() {
   console.log("cancel");
   formState.description = "";
@@ -176,7 +176,7 @@ onMounted(() => {
 
 <template>
   <page-container>
-    <!-- 头部 -->
+    <!-- Header -->
     <a-card>
       <a-row :gutter="16">
         <a-col v-for="(item, index) in workData" :key="index" :xs="24" :sm="8">
@@ -192,25 +192,25 @@ onMounted(() => {
       </a-row>
     </a-card>
 
-    <!-- 列表 -->
+    <!-- List -->
     <a-card class="mt-5">
       <template #title>
         <a-card :bordered="false">
           <a-row style="font-weight: normal;">
             <a-col :span="14">
-              <span>基本列表</span>
+              <span>Basic list</span>
             </a-col>
             <a-col :span="10" class="flex">
               <div>
                 <a-radio-group v-model:value="radioValue">
                   <a-radio-button value="a">
-                    全部
+                    All
                   </a-radio-button>
                   <a-radio-button value="b">
-                    进行中
+                    In progress
                   </a-radio-button>
                   <a-radio-button value="c">
-                    等待中
+                    Pending
                   </a-radio-button>
                 </a-radio-group>
               </div>
@@ -226,7 +226,7 @@ onMounted(() => {
           </a-row>
         </a-card>
       </template>
-      <!-- 列表主体 -->
+      <!-- List body -->
       <VirtualList v-if="dataSource.length !== 0" :data-source="dataSource">
         <template #renderItem="{ item }">
           <a-list-item>
@@ -258,16 +258,16 @@ onMounted(() => {
             <template #extra>
               <div class="a-extra">
                 <a key="list-loadmore-edit" class="m-4" @click="openModal(item)">
-                  编辑
+                  Edit
                 </a>
                 <a-dropdown>
                   <a class="ant-dropdown-link" @click.prevent>
-                    更多
+                    More
                   </a>
                   <template #overlay>
                     <a-menu>
                       <a-menu-item>
-                        <a @click="openModal">编辑</a>
+                        <a @click="openModal">Edit</a>
                       </a-menu-item>
                       <a-menu-item>
                         <a @click="showConfirm(item.index)">Delete</a>
@@ -282,13 +282,13 @@ onMounted(() => {
       </VirtualList>
     </a-card>
 
-    <!-- 底部添加按钮 -->
+    <!-- Bottom add button -->
     <a-button type="dashed" @click="openModal(null, true)">
-      + 添加
+      + Add
     </a-button>
 
     <!-- Modal -->
-    <a-modal v-model:open="openModalValue" title="任务编辑" @ok="handleOk" @cancel="cancelModal">
+    <a-modal v-model:open="openModalValue" title="Task edit" @ok="handleOk" @cancel="cancelModal">
       <a-form
         :model="formState"
         name="basic"
@@ -297,23 +297,23 @@ onMounted(() => {
         autocomplete="off"
       >
         <a-form-item
-          label="任务名称"
+          label="Task name"
           name="title"
-          :rules="[{ required: true, message: '请输入任务名称' }]"
+          :rules="[{ required: true, message: 'Please enter task name' }]"
         >
           <a-input v-model:value="formState.title" />
         </a-form-item>
         <a-form-item
           label="Start time"
           name="start"
-          :rules="[{ required: true, message: '请选择开始时间' }]"
+          :rules="[{ required: true, message: 'Please select start time' }]"
         >
           <a-date-picker v-model:value="formState.start" class="w-1/1" show-time />
         </a-form-item>
         <a-form-item
-          label="任务负责人"
+          label="Task owner"
           name="owner"
-          :rules="[{ required: true, message: '请输入任务负责人' }]"
+          :rules="[{ required: true, message: 'Please enter task owner' }]"
         >
           <a-select v-model:value="formState.owner" placeholder="please select your zone">
             <a-select-option value="owner">
@@ -322,9 +322,9 @@ onMounted(() => {
           </a-select>
         </a-form-item>
         <a-form-item
-          label="产品描述"
+          label="Product description"
           name="description"
-          :rules="[{ required: true, message: '请输入产品描述' }]"
+          :rules="[{ required: true, message: 'Please enter product description' }]"
         >
           <a-textarea v-model:value="formState.description" placeholder="Basic usage" :rows="3" />
         </a-form-item>

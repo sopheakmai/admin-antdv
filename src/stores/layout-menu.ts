@@ -31,7 +31,7 @@ export const useLayoutMenu = defineStore("layout-menu", () => {
         else
           selectedKeys.value = [menu.path];
       }
-      // 设置openkeys
+      // Setopenkeys
       if (menu?.matched) {
         const newOpenKeys = menu.matched.map(v => v.path);
         if (!layoutSetting.value.accordionMode)
@@ -56,7 +56,7 @@ export const useLayoutMenu = defineStore("layout-menu", () => {
     const latestOpenKey = innerOpenKeys.find(key => !openKeys.value.includes(key));
     if (latestOpenKey) {
       if (!rootSubmenuKeys.includes(latestOpenKey)) {
-        // 与 前一项比较 是否为同一级，同级则移除前一项
+        // and compare with the previous item 是否为同一级，同级则移除前一项
         const prevKey = innerOpenKeys[innerOpenKeys.length - 2];
         const preMenuItem = findMenuByPath(prevKey)(menuData.value);
         const latestOpenMenuItem = findMenuByPath(latestOpenKey)(menuData.value);
@@ -88,7 +88,7 @@ export const useLayoutMenu = defineStore("layout-menu", () => {
   };
 
   watch(router.currentRoute, (route) => {
-    // 路由发生变化
+    // Route changes
     if (route.path === selectedKeys.value[0])
       return;
     changeMenu();

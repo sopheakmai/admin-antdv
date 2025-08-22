@@ -21,7 +21,7 @@ async function handleSubmit() {
 const state = reactive({
   columns: [
     {
-      title: "成员姓名",
+      title: "Member name",
       dataIndex: "name",
       key: "name",
       width: "20%",
@@ -35,14 +35,14 @@ const state = reactive({
       scopedSlots: { customRender: "workId" },
     },
     {
-      title: "所属部门",
+      title: "Department",
       dataIndex: "department",
       key: "department",
       width: "40%",
       scopedSlots: { customRender: "department" },
     },
     {
-      title: "操作",
+      title: "Action",
       key: "action",
       scopedSlots: { customRender: "operation" },
     },
@@ -50,24 +50,24 @@ const state = reactive({
   data: [
     {
       key: "1",
-      name: "员工1",
+      name: "Employee1",
       workId: "001",
       editable: false,
-      department: "行政部",
+      department: "Administration Department",
     },
     {
       key: "2",
-      name: "员工2",
+      name: "Employee2",
       workId: "002",
       editable: false,
-      department: "IT部",
+      department: "ITDepartment",
     },
     {
       key: "3",
-      name: "员工3",
+      name: "Employee3",
       workId: "003",
       editable: false,
-      department: "财务部",
+      department: "Finance Department",
     },
   ],
 });
@@ -75,11 +75,11 @@ function handleAdd() {
   const key = state.data.length === 0 ? "1" : (Number.parseInt(state.data[state.data.length - 1].key) + 1).toString();
   const newData = {
     key,
-    name: `员工${key}`,
-    // 如果小于10，前面补00，如001,如果小于100，大于10，前面补0，如010
+    name: `Employee${key}`,
+    // If less than10，前面补00，如001,If less than100，大于10，前面补0，如010
     workId: Number.parseInt(key) < 10 ? `00${key}` : Number.parseInt(key) < 100 ? `0${key}` : key,
     editable: true,
-    department: ["行政部", "IT部", "财务部"][Math.floor(Math.random() * 3)],
+    department: ["Administration Department", "ITDepartment", "Finance Department"][Math.floor(Math.random() * 3)],
   };
   state.data.push(newData);
 }
@@ -94,10 +94,10 @@ function remove(key: string) {
       高级表单常见于一次性输入和提交大批量数据的场景。
     </template>
     <a-space size="large" direction="vertical" :style="{ width: '100%' }">
-      <a-card class="card" title="仓库管理" :bordered="false">
+      <a-card class="card" title="Warehouse management" :bordered="false">
         <RepositoryForm ref="repositoryFormRef" :show-submit="false" />
       </a-card>
-      <a-card class="card" title="任务管理" :bordered="false">
+      <a-card class="card" title="Task management" :bordered="false">
         <TaskForm ref="taskFormRef" :show-submit="false" />
       </a-card>
       <a-card>
@@ -119,7 +119,7 @@ function remove(key: string) {
           </template>
         </a-table>
         <a-button style="width: 100%; margin-top: 16px; margin-bottom: 8px" type="dashed" @click="handleAdd">
-          新增成员
+          Add member
         </a-button>
       </a-card>
     </a-space>

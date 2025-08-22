@@ -23,14 +23,12 @@ const instance: AxiosInstance = axios.create({
 });
 const axiosLoading = new AxiosLoading();
 async function requestHandler(config: InternalAxiosRequestConfig & RequestConfigExtra): Promise<InternalAxiosRequestConfig> {
-  // 处理请求前的url
   if (
     import.meta.env.DEV
       && import.meta.env.VITE_APP_BASE_API_DEV
       && import.meta.env.VITE_APP_BASE_URL_DEV
       && config.customDev
   ) {
-    //  替换url的请求前缀baseUrl
     config.baseURL = import.meta.env.VITE_APP_BASE_API_DEV;
   }
   const token = useAuthorization();
@@ -38,7 +36,6 @@ async function requestHandler(config: InternalAxiosRequestConfig & RequestConfig
   if (token.value && config.token !== false)
     config.headers.set(STORAGE_AUTHORIZE_KEY, token.value);
 
-  // 增加多语言的配置
   const { locale } = useI18nLocale();
   config.headers.set("Accept-Language", locale.value ?? "zh-CN");
   if (config.loading)
@@ -62,9 +59,6 @@ function errorHandler(error: AxiosError): Promise<any> {
         description: data?.msg || statusText,
         duration: 3,
       });
-      /**
-       * 这里处理清空用户信息和token的逻辑，后续扩展
-       */
       token.value = null;
       router
         .push({
@@ -91,7 +85,7 @@ function errorHandler(error: AxiosError): Promise<any> {
     }
     else {
       notification?.error({
-        message: "服务错误",
+        message: "Service error",
         description: data?.msg || statusText,
         duration: 3,
       });

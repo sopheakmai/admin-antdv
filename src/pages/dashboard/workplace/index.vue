@@ -8,12 +8,12 @@ defineOptions({
 
 const currentUser = {
   avatar: "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png",
-  name: "吴彦祖",
+  name: "Daniel Wu",
   userid: "00000001",
   email: "antdesign@alipay.com",
   signature: "海纳百川，有容乃大",
-  title: "交互专家",
-  group: "蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED",
+  title: "Interaction expert",
+  group: "Ant Financial－Certain business group－Certain platform department－Certain technology department－UED",
 };
 
 const projectNotice = [
@@ -21,9 +21,9 @@ const projectNotice = [
     id: "xxx1",
     title: "Alipay",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png",
-    description: "那是一种内在的东西，他们到达不了，也无法触及的",
-    updatedAt: "几秒前",
-    member: "科学搬砖组",
+    description: "It is something internal, they cannot reach it, nor can they touch it.",
+    updatedAt: "A few seconds ago",
+    member: "Scientific brick-moving group",
     href: "",
     memberLink: "",
   },
@@ -31,9 +31,9 @@ const projectNotice = [
     id: "xxx2",
     title: "Angular",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png",
-    description: "希望是一个好东西，也许是最好的，好东西是不会消亡的",
-    updatedAt: "6 年前",
-    member: "全组都是吴彦祖",
+    description: "Hope is a good thing, maybe the best of things, and good things never die.",
+    updatedAt: "6 Years ago",
+    member: "The whole team is Daniel Wu",
     href: "",
     memberLink: "",
   },
@@ -41,9 +41,9 @@ const projectNotice = [
     id: "xxx3",
     title: "Ant Design",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/dURIMkkrRFpPgTuzkwnB.png",
-    description: "城镇中有那么多的酒馆，她却偏偏走进了我的酒馆",
-    updatedAt: "几秒前",
-    member: "中二少女团",
+    description: "There are so many bars in town, but she just walked into my bar.",
+    updatedAt: "A few seconds ago",
+    member: "Chunibyo Girls Group",
     href: "",
     memberLink: "",
   },
@@ -51,9 +51,9 @@ const projectNotice = [
     id: "xxx4",
     title: "Ant Design Pro",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/sfjbOqnsXXJgNCjCzDBL.png",
-    description: "那时候我只会想自己想要什么，从不想自己拥有什么",
-    updatedAt: "6 年前",
-    member: "程序员日常",
+    description: "At that time, I only thought about what I wanted, never about what I had.",
+    updatedAt: "6 Years ago",
+    member: "Programmer's daily life",
     href: "",
     memberLink: "",
   },
@@ -61,9 +61,9 @@ const projectNotice = [
     id: "xxx5",
     title: "Bootstrap",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/siCrBXXhmvTQGWPNLBow.png",
-    description: "凛冬将至",
-    updatedAt: "6 年前",
-    member: "高逼格设计天团",
+    description: "Winter is coming",
+    updatedAt: "6 Years ago",
+    member: "High-class design team",
     href: "",
     memberLink: "",
   },
@@ -72,8 +72,8 @@ const projectNotice = [
     title: "React",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png",
     description: "Life is like a box of chocolates，The results are often unexpected",
-    updatedAt: "6 年前",
-    member: "骗你来学计算机",
+    updatedAt: "6 Years ago",
+    member: "Trick you into learning computer science",
     href: "",
     memberLink: "",
   },
@@ -82,185 +82,185 @@ const projectNotice = [
 const activities = [
   {
     id: "trend-1",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "曲丽丽",
+      name: "Qu Lili",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png",
     },
     group: {
-      name: "高逼格设计天团",
+      name: "High-class design team",
       link: "http://github.com/",
     },
     project: {
-      name: "六月迭代",
+      name: "June iteration",
       link: "http://github.com/",
     },
-    template1: "在",
-    template2: "新建项目",
+    template1: "at",
+    template2: "New project",
   },
   {
     id: "trend-2",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "付小小",
+      name: "Fu Xiaoxiao",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/cnrhVkzwxjPwAaCfPbdc.png",
     },
     group: {
-      name: "高逼格设计天团",
+      name: "High-class design team",
       link: "http://github.com/",
     },
     project: {
-      name: "六月迭代",
+      name: "June iteration",
       link: "http://github.com/",
     },
-    template1: "在",
-    template2: "新建项目",
+    template1: "at",
+    template2: "New project",
   },
   {
     id: "trend-3",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "林东东",
+      name: "Lin Dongdong",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/gaOngJwsRYRaVAuXXcmB.png",
     },
     group: {
-      name: "中二少女团",
+      name: "Chunibyo Girls Group",
       link: "http://github.com/",
     },
     project: {
-      name: "六月迭代",
+      name: "June iteration",
       link: "http://github.com/",
     },
-    template1: "在",
-    template2: "新建项目",
+    template1: "at",
+    template2: "New project",
   },
   {
     id: "trend-4",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "周星星",
+      name: "Zhou Xingxing",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/WhxKECPNujWoWEFNdnJE.png",
     },
     group: {
-      name: "5 月日常迭代",
+      name: "5 Monthly routine iteration",
       link: "http://github.com/",
     },
-    template1: "将",
-    template2: "更新至已发布状态",
+    template1: "will",
+    template2: "Update to published status",
   },
   {
     id: "trend-5",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "朱偏右",
+      name: "Zhu Pianyou",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/ubnKSIfAJTxIgXOKlciN.png",
     },
     group: {
-      name: "工程效能",
+      name: "Engineering efficiency",
       link: "http://github.com/",
     },
     project: {
-      name: "留言",
+      name: "Leave a message",
       link: "http://github.com/",
     },
-    template1: "在",
-    template2: "发布了",
+    template1: "at",
+    template2: "Published",
   },
   {
     id: "trend-6",
-    updatedAt: "几秒前",
+    updatedAt: "A few seconds ago",
     user: {
-      name: "乐哥",
+      name: "Brother Le",
       avatar: "https://gw.alipayobjects.com/zos/rmsportal/jZUIxmJycoymBprLOUbT.png",
     },
     group: {
-      name: "程序员日常",
+      name: "Programmer's daily life",
       link: "http://github.com/",
     },
     project: {
-      name: "品牌迭代",
+      name: "Brand iteration",
       link: "http://github.com/",
     },
-    template1: "在",
-    template2: "新建项目",
+    template1: "at",
+    template2: "New project",
   },
 ];
 
 const radarContainer = ref();
 const radarData = [
   {
-    name: "个人",
-    label: "引用",
+    name: "Personal",
+    label: "Quote",
     value: 10,
   },
   {
-    name: "个人",
-    label: "口碑",
+    name: "Personal",
+    label: "Word of mouth",
     value: 8,
   },
   {
-    name: "个人",
-    label: "产量",
+    name: "Personal",
+    label: "Output",
     value: 4,
   },
   {
-    name: "个人",
-    label: "贡献",
+    name: "Personal",
+    label: "Contribution",
     value: 5,
   },
   {
-    name: "个人",
-    label: "热度",
+    name: "Personal",
+    label: "Popularity",
     value: 7,
   },
   {
     name: "Team",
-    label: "引用",
+    label: "Quote",
     value: 3,
   },
   {
     name: "Team",
-    label: "口碑",
+    label: "Word of mouth",
     value: 9,
   },
   {
     name: "Team",
-    label: "产量",
+    label: "Output",
     value: 6,
   },
   {
     name: "Team",
-    label: "贡献",
+    label: "Contribution",
     value: 3,
   },
   {
     name: "Team",
-    label: "热度",
+    label: "Popularity",
     value: 1,
   },
   {
-    name: "部门",
-    label: "引用",
+    name: "Department",
+    label: "Quote",
     value: 4,
   },
   {
-    name: "部门",
-    label: "口碑",
+    name: "Department",
+    label: "Word of mouth",
     value: 1,
   },
   {
-    name: "部门",
-    label: "产量",
+    name: "Department",
+    label: "Output",
     value: 6,
   },
   {
-    name: "部门",
-    label: "贡献",
+    name: "Department",
+    label: "Contribution",
     value: 5,
   },
   {
-    name: "部门",
-    label: "热度",
+    name: "Department",
+    label: "Popularity",
     value: 7,
   },
 ];
@@ -296,9 +296,9 @@ onBeforeUnmount(() => {
         </div>
         <div class="content">
           <div class="contentTitle">
-            早安，
+            Good morning,
             {{ currentUser.name }}
-            ，祝你开心每一天！
+            , wish you a happy day!
           </div>
           <div>
             {{ currentUser.title }} |{{ currentUser.group }}
@@ -309,13 +309,13 @@ onBeforeUnmount(() => {
     <template #extraContent>
       <div class="extraContent">
         <div class="statItem">
-          <a-statistic title="项目数" :value="56" />
+          <a-statistic title="Number of projects" :value="56" />
         </div>
         <div class="statItem">
-          <a-statistic title="团队内排名" :value="8" suffix="/ 24" />
+          <a-statistic title="Team ranking" :value="8" suffix="/ 24" />
         </div>
         <div class="statItem">
-          <a-statistic title="项目访问" :value="2223" />
+          <a-statistic title="Project visits" :value="2223" />
         </div>
       </div>
     </template>
@@ -325,14 +325,14 @@ onBeforeUnmount(() => {
         <a-card
           class="projectList"
           :style="{ marginBottom: '24px' }"
-          title="进行中的项目"
+          title="Projects in progress"
           :bordered="false"
           :loading="false"
           :body-style="{ padding: 0 }"
         >
           <template #extra>
             <router-link to="/">
-              全部项目
+              All projects
             </router-link>
           </template>
           <a-card-grid v-for="item in projectNotice" :key="item.id" class="projectGrid">
@@ -365,7 +365,7 @@ onBeforeUnmount(() => {
           :body-style="{ padding: 0 }"
           :bordered="false"
           class="activeCard"
-          title="动态"
+          title="Activity"
           :loading="false"
         >
           <a-list
@@ -403,7 +403,7 @@ onBeforeUnmount(() => {
       <a-col :xl="8" :lg="24" :md="24" :sm="24" :xs="24">
         <a-card
           :style="{ marginBottom: '24px' }"
-          title="快速开始 / 便捷导航"
+          title="Quick start / Convenient navigation"
           :bordered="false"
           :body-style="{ padding: 0 }"
         >
@@ -412,7 +412,7 @@ onBeforeUnmount(() => {
         <a-card
           :style="{ marginBottom: '24px' }"
           :bordered="false"
-          title="XX 指数"
+          title="XX Index"
         >
           <div class="chart">
             <div ref="radarContainer" />
