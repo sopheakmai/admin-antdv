@@ -11,10 +11,10 @@ export const preferredLanguages = usePreferredLanguages();
 export const lsLocaleState = useStorage(LOCALE_KEY, preferredLanguages.value[0]);
 
 export const useI18nLocale = createSharedComposable(() => {
-  // 加载多语言的loading状态
+  // Load multilingualloadingStatus
   const loading = ref(false);
   const localeStore = useAppStore();
-  // 多语言的信息
+  // multilingual information
   const locale = computed<string>(() => {
     if (!i18n)
       return "zh-CN";
@@ -22,12 +22,12 @@ export const useI18nLocale = createSharedComposable(() => {
     return unref(i18n.global.locale);
   });
 
-  // 获取antd的多语言
+  // Getantdismultilingual
   const antd = computed(() => {
     return (i18n?.global?.getLocaleMessage?.(unref(locale)) as any)?.antd || undefined;
   });
 
-  // 切换多语言
+  // Switch multilingual
   const setLocale = async (locale: string) => {
     if (!i18n)
       return;
@@ -36,10 +36,10 @@ export const useI18nLocale = createSharedComposable(() => {
       return;
     loading.value = true;
     try {
-      // 加载多语言
+      // Load multilingual
       localeStore.toggleLocale(locale);
       await loadLanguageAsync(locale);
-      // 判断是否存在兼容模式
+      // Check if there is a compatibility mode
       if (i18n.mode === "legacy")
         i18n.global.locale = locale as any;
       else
@@ -61,7 +61,7 @@ export const useI18nLocale = createSharedComposable(() => {
     immediate: true,
   });
 
-  // 切换多语言功能
+  // Multilingual switching function
   const t = (key: string, defaultMessage?: string) => {
     const message = (i18n?.global as any)?.t?.(key);
     if (message !== key)

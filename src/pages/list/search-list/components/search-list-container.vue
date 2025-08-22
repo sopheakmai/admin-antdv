@@ -12,7 +12,7 @@ function handleChangePage(key: any) {
     <template #content>
       <div class="flex items-center justify-center">
         <a-input-search
-          placeholder="请输入"
+          placeholder="Please enter"
           enter-button="搜索"
           style="width: 300px"
         />
@@ -21,9 +21,9 @@ function handleChangePage(key: any) {
     <template #footer>
       <div class="mb--16px mt-6">
         <a-tabs :active-key="activeKey" @update:active-key="handleChangePage">
-          <a-tab-pane key="/list/search-list/articles" tab="文章" />
-          <a-tab-pane key="/list/search-list/projects" tab="项目" />
-          <a-tab-pane key="/list/search-list/applications" tab="应用" />
+          <a-tab-pane key="/list/search-list/articles" tab="Article" />
+          <a-tab-pane key="/list/search-list/projects" tab="Project" />
+          <a-tab-pane key="/list/search-list/applications" tab="Application" />
         </a-tabs>
       </div>
     </template>

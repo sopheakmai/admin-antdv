@@ -8,7 +8,7 @@ export default [
     redirect: "/dashboard/analysis",
     name: "Dashboard",
     meta: {
-      title: "仪表盘",
+      title: "Dashboard",
       icon: "DashboardOutlined",
     },
     component: basicRouteMap.RouteView,
@@ -18,7 +18,7 @@ export default [
         name: "DashboardAnalysis",
         component: () => import("~/pages/dashboard/analysis/index.vue"),
         meta: {
-          title: "分析页",
+          title: "Analysis page",
         },
       },
       {
@@ -26,7 +26,7 @@ export default [
         name: "DashboardMonitor",
         component: () => import("~/pages/dashboard/monitor/index.vue"),
         meta: {
-          title: "监控页",
+          title: "Monitoring page",
         },
       },
       {
@@ -34,7 +34,7 @@ export default [
         name: "DashboardWorkplace",
         component: () => import("~/pages/dashboard/workplace/index.vue"),
         meta: {
-          title: "监控页",
+          title: "Monitoring page",
         },
       },
     ],
@@ -44,7 +44,7 @@ export default [
     redirect: "/form/basic-form",
     name: "Form",
     meta: {
-      title: "表单页",
+      title: "Form page",
       icon: "FormOutlined",
     },
     component: basicRouteMap.RouteView,
@@ -54,7 +54,7 @@ export default [
         name: "FormBasic",
         component: () => import("~/pages/form/basic-form/index.vue"),
         meta: {
-          title: "基础表单",
+          title: "Basic form",
           locale: "menu.form.basic-form",
         },
       },
@@ -63,7 +63,7 @@ export default [
         name: "FormStep",
         component: () => import("~/pages/form/step-form/index.vue"),
         meta: {
-          title: "分步表单",
+          title: "Step form",
           locale: "menu.form.step-form",
         },
       },
@@ -72,7 +72,7 @@ export default [
         name: "FormAdvanced",
         component: () => import("~/pages/form/advanced-form/index.vue"),
         meta: {
-          title: "高级表单",
+          title: "Advanced form",
           locale: "menu.form.advanced-form",
         },
       },
@@ -83,7 +83,7 @@ export default [
     redirect: "/link/iframe",
     name: "Link",
     meta: {
-      title: "链接",
+      title: "Link",
       icon: "LinkOutlined",
     },
     component: basicRouteMap.RouteView,
@@ -110,7 +110,7 @@ export default [
         path: "https://www.baidu.com",
         name: "LinkExternal",
         meta: {
-          title: "跳转百度",
+          title: "Jump to Baidu",
           // target: '_self',
         },
       },
@@ -121,7 +121,7 @@ export default [
     redirect: "/menu/menu1",
     name: "Menu",
     meta: {
-      title: "菜单",
+      title: "Menu",
       icon: "BarsOutlined",
     },
     component: basicRouteMap.RouteView,
@@ -131,7 +131,7 @@ export default [
         name: "MenuMenu11",
         component: () => import("~/pages/menu/menu1.vue"),
         meta: {
-          title: "菜单1",
+          title: "Menu1",
         },
       },
       {
@@ -139,7 +139,7 @@ export default [
         name: "MenuMenu12",
         component: () => import("~/pages/menu/menu2.vue"),
         meta: {
-          title: "菜单2",
+          title: "Menu2",
         },
       },
       {
@@ -147,7 +147,7 @@ export default [
         redirect: "/menu/menu3/menu1",
         name: "MenuMenu1-1",
         meta: {
-          title: "菜单1-1",
+          title: "Menu1-1",
         },
         children: [
           {
@@ -155,7 +155,7 @@ export default [
             name: "MenuMenu111",
             component: () => import("~/pages/menu/menu-1-1/menu1.vue"),
             meta: {
-              title: "菜单1-1-1",
+              title: "Menu1-1-1",
             },
           },
           {
@@ -163,7 +163,7 @@ export default [
             name: "MenuMenu112",
             component: () => import("~/pages/menu/menu-1-1/menu2.vue"),
             meta: {
-              title: "菜单1-1-2",
+              title: "Menu1-1-2",
             },
           },
         ],
@@ -173,7 +173,7 @@ export default [
         redirect: "/menu/menu4/menu1",
         name: "MenuMenu2-1",
         meta: {
-          title: "菜单2-1",
+          title: "Menu2-1",
         },
         children: [
           {
@@ -181,7 +181,7 @@ export default [
             name: "MenuMenu211",
             component: () => import("~/pages/menu/menu-2-1/menu1.vue"),
             meta: {
-              title: "菜单2-1-1",
+              title: "Menu2-1-1",
             },
           },
           {
@@ -189,7 +189,7 @@ export default [
             name: "MenuMenu212",
             component: () => import("~/pages/menu/menu-2-1/menu2.vue"),
             meta: {
-              title: "菜单2-1-2",
+              title: "Menu2-1-2",
             },
           },
         ],
@@ -223,7 +223,7 @@ export default [
     redirect: "/access/common",
     name: "Access",
     meta: {
-      title: "权限模块",
+      title: "Permission module",
       icon: "ClusterOutlined",
     },
     children: [
@@ -232,7 +232,7 @@ export default [
         name: "AccessCommon",
         component: () => import("~/pages/access/common.vue"),
         meta: {
-          title: "通用权限",
+          title: "General permissions",
         },
       },
       {
@@ -240,7 +240,7 @@ export default [
         name: "AccessUser",
         component: () => import("~/pages/access/user.vue"),
         meta: {
-          title: "普通用户",
+          title: "Regular user",
           access: [AccessEnum.USER, AccessEnum.ADMIN],
         },
       },
@@ -249,7 +249,7 @@ export default [
         name: "AccessAdmin",
         component: () => import("~/pages/access/admin.vue"),
         meta: {
-          title: "管理员",
+          title: "Administrator",
           access: [AccessEnum.ADMIN],
         },
       },
@@ -260,7 +260,7 @@ export default [
     redirect: "/exception/403",
     name: "Exception",
     meta: {
-      title: "异常页",
+      title: "Exception page",
       icon: "WarningOutlined",
       locale: "menu.exception",
     },
@@ -294,13 +294,13 @@ export default [
       },
     ],
   },
-  // 结果页
+  // Result page
   {
     path: "/result",
     redirect: "/result/success",
     name: "Result",
     meta: {
-      title: "结果页",
+      title: "Result page",
       icon: "CheckCircleOutlined",
       locale: "menu.result",
     },
@@ -311,7 +311,7 @@ export default [
         name: "ResultSuccess",
         component: () => import("~/pages/result/success.vue"),
         meta: {
-          title: "成功页",
+          title: "Success page",
           locale: "menu.result.success",
         },
       },
@@ -320,7 +320,7 @@ export default [
         name: "ResultFail",
         component: () => import("~/pages/result/fail.vue"),
         meta: {
-          title: "失败页",
+          title: "Failure page",
           locale: "menu.result.fail",
         },
       },
@@ -331,7 +331,7 @@ export default [
     redirect: "/list/card-list",
     name: "List",
     meta: {
-      title: "列表页",
+      title: "List page",
       icon: "TableOutlined",
       locale: "menu.list",
     },
@@ -342,7 +342,7 @@ export default [
         name: "CardList",
         component: () => import("~/pages/list/card-list.vue"),
         meta: {
-          title: "卡片列表",
+          title: "Card list",
           locale: "menu.list.card-list",
         },
       },
@@ -351,7 +351,7 @@ export default [
         name: "ConsultTable",
         component: () => import("~/pages/list/table-list.vue"),
         meta: {
-          title: "查询表格",
+          title: "Query table",
           locale: "menu.list.consult-table",
         },
       },
@@ -360,7 +360,7 @@ export default [
         name: "CrudTable",
         component: () => import("~/pages/list/crud-table.vue"),
         meta: {
-          title: "增删改查表格",
+          title: "CRUD table",
           locale: "menu.list.crud-table",
         },
       },
@@ -369,7 +369,7 @@ export default [
         name: "BasicList",
         component: () => import("~/pages/list/basic-list.vue"),
         meta: {
-          title: "标准列表",
+          title: "Standard list",
           locale: "menu.list.basic-list",
         },
       },
@@ -378,7 +378,7 @@ export default [
         name: "SearchList",
         component: () => import("~/pages/list/search-list/index.vue"),
         meta: {
-          title: "搜索列表",
+          title: "Search list",
           locale: "menu.list.search-list",
         },
         redirect: "/list/search-list/articles",
@@ -388,7 +388,7 @@ export default [
             name: "SearchListArticles",
             component: () => import("~/pages/list/search-list/articles.vue"),
             meta: {
-              title: "搜索列表（文章）",
+              title: "Search list（Article）",
               locale: "menu.list.search-list.articles",
             },
           },
@@ -397,7 +397,7 @@ export default [
             name: "SearchListProjects",
             component: () => import("~/pages/list/search-list/projects.vue"),
             meta: {
-              title: "搜索列表（项目）",
+              title: "Search list（Project）",
               locale: "menu.list.search-list.projects",
             },
           },
@@ -406,7 +406,7 @@ export default [
             name: "SearchListApplications",
             component: () => import("~/pages/list/search-list/applications.vue"),
             meta: {
-              title: "搜索列表（应用）",
+              title: "Search list（Application）",
               locale: "menu.list.search-list.applications",
             },
           },
@@ -419,7 +419,7 @@ export default [
     redirect: "/account/center",
     name: "Account",
     meta: {
-      title: "个人页",
+      title: "Personal page",
       icon: "UserOutlined",
       locale: "menu.account",
     },
@@ -439,7 +439,7 @@ export default [
         name: "AccountSettings",
         component: () => import("~/pages/account/settings.vue"),
         meta: {
-          title: "个人设置",
+          title: "Personal settings",
           locale: "menu.account.settings",
         },
       },
@@ -448,7 +448,7 @@ export default [
         name: "AccountSettings1",
         component: () => import("~/pages/account/settings.vue"),
         meta: {
-          title: "个人设置1",
+          title: "Personal settings1",
           locale: "menu.account.settings",
           hideInMenu: true,
           parentKeys: ["/account/settings"],

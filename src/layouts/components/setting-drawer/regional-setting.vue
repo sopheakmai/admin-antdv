@@ -19,52 +19,52 @@ const props = defineProps<{
 const emit = defineEmits(["changeSetting"]);
 const list = computed(() => ([
   {
-    title: "动画",
+    title: "Animation",
     key: "animationName",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "水印",
+    title: "Watermark",
     key: "watermark",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "顶栏",
+    title: "Top bar",
     key: "header",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "页脚",
+    title: "Footer",
     key: "footer",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "菜单",
+    title: "Menu",
     key: "menu",
     disabled: props.layout === "top",
     disabledReason: "",
   },
   {
-    title: "菜单头",
+    title: "Menu header",
     key: "menuHeader",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "多页签",
+    title: "Multiple tabs",
     key: "multiTab",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "固定多页签",
+    title: "Fixed multiple tabs",
     key: "multiTabFixed",
     disabled: false,
-    disabledReason: "多页签开启后功能正常使用",
+    disabledReason: "The function works normally after multiple tabs are enabled",
   },
 ]));
 

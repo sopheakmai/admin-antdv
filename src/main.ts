@@ -25,7 +25,7 @@ async function start() {
 }
 
 function setupDirective(app: App) {
-  // 注册loading自定义指令
+  // RegisterloadingCustom directive
   setupLoadingDirective(app);
   setupAccessDirective(app);
 }

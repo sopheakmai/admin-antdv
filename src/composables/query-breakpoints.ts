@@ -9,11 +9,11 @@ export const breakpointsEnum = {
 export function useQueryBreakpoints() {
   const breakpoints = reactive(useBreakpoints(breakpointsEnum));
 
-  // 手机端
+  // Mobile
   const isMobile = breakpoints.smaller("sm");
-  // pad端
+  // padEnd, tip
   const isPad = breakpoints.between("sm", "md");
-  // pc端
+  // pcEnd, tip
   const isDesktop = breakpoints.greater("md");
 
   return {

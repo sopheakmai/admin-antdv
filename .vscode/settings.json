@@ -59,7 +59,7 @@
   // "i18n-ally.displayLanguage": "zh-CN",
   "i18n-ally.enabledParsers": ["ts"],
   "i18n-ally.parsers.typescript.compilerOptions": {
-    "moduleResolution": "node" // 配置解析策略
+    "moduleResolution": "node" // Configure parsing strategy
   },
   "cSpell.words": [
     "Attributify",

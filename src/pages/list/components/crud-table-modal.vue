@@ -80,10 +80,10 @@ defineExpose({
       <a-form-item name="name" label="名" :rules="[{ required: true, message: '请输入名' }]">
         <a-input v-model:value="formData.name" :maxlength="50" placeholder="请输入名" />
       </a-form-item>
-      <a-form-item name="value" label="值" :rules="[{ required: true, message: '请输入值' }]">
+      <a-form-item name="value" label="Value" :rules="[{ required: true, message: '请输入值' }]">
         <a-input v-model:value="formData.value" :maxlength="50" placeholder="请输入值" />
       </a-form-item>
-      <a-form-item name="remark" label="备注">
+      <a-form-item name="remark" label="Notes">
         <a-textarea v-model:value="formData.remark" show-count :maxlength="200" placeholder="请输入备注" />
       </a-form-item>
     </a-form>

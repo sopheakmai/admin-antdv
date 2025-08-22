@@ -6,29 +6,29 @@ function assign<T extends Record<string, any>>(...sources: Partial<T>[]): T {
 }
 
 /**
- * 表格分页扩展类型
+ * Table pagination extension type
  */
 export type TablePaginationProps = {
   /**
-   * 排序字段
+   * Sort field
    */
   column: string;
   /**
-   * 排序方式
+   * Sort order
    */
   order: string;
 } & PaginationProps;
 
 /**
- * 表格选择框扩展类型
+ * Table selection box extension type
  */
 export type TableRowSelectionsProps = {
   /**
-   * 选择行
+   * Select row
    */
   selectedRows: any[];
   /**
-   * 选择行key
+   * Select rowkey
    */
   selectedRowKeys: any[];
 } & TableRowSelection;
@@ -40,57 +40,57 @@ type TableQueryResult<D = any> = {
 };
 
 /**
- * 表格查询配置
+ * Table query configuration
  */
 export type TableQueryOptions<D = any> = {
   /**
-   *查询接口
+   *Query interface
    */
   queryApi: (params?: any) => Promise<any>;
   /**
-   * 是否加载中
+   * Is loading
    */
   loading: boolean;
   /**
-   * 数据源
+   * Data source
    */
   dataSource: D[];
   /**
-   * 查询参数
+   * Query parameters
    */
   queryParams: Record<string, any>;
   /**
-   * 选择配置
+   * Selection configuration
    */
   rowSelections: TableRowSelectionsProps;
   /**
-   * 挂载时进行查询
+   * Query when mounted
    */
   queryOnMounted: boolean;
   /**
-   *  分页配置
+   *  Pagination configuration
    */
   pagination: TablePaginationProps;
   /**
-   * 是否展开
+   * Is expanded
    */
   expand: boolean;
   /**
-   * 展开变化
+   * Expansion change
    */
   expandChange: () => void;
   /**
-   * 查询前回调
+   * Callback before query
    */
   beforeQuery: () => void | Promise<void>;
   /**
-   * 查询后回调
+   * Callback after query
    */
   afterQuery: <R extends TableQueryResult<D> = any>(data: R) => R | Promise<R>;
 };
 
 /**
- * 表格查询方法
+ * Table query method
  */
 export function useTableQuery(_options: Partial<TableQueryOptions>) {
   const state = reactive<TableQueryOptions>(assign({
@@ -117,7 +117,7 @@ export function useTableQuery(_options: Partial<TableQueryOptions>) {
         column: "createTime",
         showSizeChanger: true,
         showQuickJumper: true,
-        showTotal: total => `总数据位：${total}`,
+        showTotal: total => `Total data position：${total}`,
         onChange(current, pageSize) {
           state.pagination!.pageSize = pageSize;
           state.pagination!.current = current;
@@ -135,7 +135,7 @@ export function useTableQuery(_options: Partial<TableQueryOptions>) {
     },
   }, _options));
 
-  // 查询方法
+  // Query method
   async function query() {
     if (state.loading)
       return;
@@ -164,14 +164,14 @@ export function useTableQuery(_options: Partial<TableQueryOptions>) {
     }
   }
 
-  // 重置方法
+  // Reset method
   function resetQuery() {
     state.pagination.current = 1;
     state.queryParams = {};
     query();
   }
 
-  // 初始化查询
+  // Initialize query
   function initQuery() {
     state.pagination.current = 1;
     query();

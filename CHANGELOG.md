@@ -23,7 +23,7 @@
 
 - Aibayanyu20 <aibayanyu@qq.com>
 - ZhouWei <1244620067@qq.com>
-- 阿鸡艾克斯蒙 <dosicker@gmail.com>
+- Ajisai Mon <dosicker@gmail.com>
 
 ## v1.3.2
 
@@ -68,7 +68,7 @@
 ### ❤️ Contributors
 
 - Aibayanyu20 <aibayanyu@qq.com>
-- 红烧粽子 ([@songsong0707](http://github.com/songsong0707))
+- Braised Zongzi ([@songsong0707](http://github.com/songsong0707))
 
 ## v1.3.0
 
@@ -97,7 +97,7 @@
 - Multi-tab width error ([f6e7312](https://github.com/antdv-pro/antdv-pro/commit/f6e7312))
 - Change ext ([63f0818](https://github.com/antdv-pro/antdv-pro/commit/63f0818))
 - Attribute definition error ([2206646](https://github.com/antdv-pro/antdv-pro/commit/2206646))
-- **function:** Fix 菜单手风琴模式，子菜单未能按手风琴模式进行展开/收起； ([330d5b1](https://github.com/antdv-pro/antdv-pro/commit/330d5b1))
+- **function:** Fix Menu accordion mode，Submenu could not be expanded in accordion mode/Collapse； ([330d5b1](https://github.com/antdv-pro/antdv-pro/commit/330d5b1))
 - Fix split multi tab close #172 ([#172](https://github.com/antdv-pro/antdv-pro/issues/172))
 - Fixed multi tab display error close #173 ([#173](https://github.com/antdv-pro/antdv-pro/issues/173))
 - Fix error ([c6bba82](https://github.com/antdv-pro/antdv-pro/commit/c6bba82))
@@ -111,7 +111,7 @@
 - Watermark container ([36c6121](https://github.com/antdv-pro/antdv-pro/commit/36c6121))
 - Watermark false render ([13123bf](https://github.com/antdv-pro/antdv-pro/commit/13123bf))
 - Watermark false render ([663ec59](https://github.com/antdv-pro/antdv-pro/commit/663ec59))
-- 前端路由(dynamicRoutes)权限问题 ([a8e9623](https://github.com/antdv-pro/antdv-pro/commit/a8e9623))
+- Frontend routing(dynamicRoutes)Permission issue ([a8e9623](https://github.com/antdv-pro/antdv-pro/commit/a8e9623))
 - Eslint ([a53e1ef](https://github.com/antdv-pro/antdv-pro/commit/a53e1ef))
 
 ### 📖 Documentation
@@ -195,7 +195,7 @@
 - Multi-tab width error ([f6e7312](https://github.com/antdv-pro/antdv-pro/commit/f6e7312))
 - Change ext ([63f0818](https://github.com/antdv-pro/antdv-pro/commit/63f0818))
 - Attribute definition error ([2206646](https://github.com/antdv-pro/antdv-pro/commit/2206646))
-- **function:** Fix 菜单手风琴模式，子菜单未能按手风琴模式进行展开/收起； ([330d5b1](https://github.com/antdv-pro/antdv-pro/commit/330d5b1))
+- **function:** Fix Menu accordion mode，Submenu could not be expanded in accordion mode/Collapse； ([330d5b1](https://github.com/antdv-pro/antdv-pro/commit/330d5b1))
 - Fix split multi tab close #172 ([#172](https://github.com/antdv-pro/antdv-pro/issues/172))
 - Fixed multi tab display error close #173 ([#173](https://github.com/antdv-pro/antdv-pro/issues/173))
 - Fix error ([c6bba82](https://github.com/antdv-pro/antdv-pro/commit/c6bba82))
@@ -267,7 +267,7 @@
 ### 🩹 Fixes
 
 - Eslint-config in vscode ([f8018ac](https://github.com/antdv-pro/antdv-pro/commit/f8018ac))
-- 路由切换可能导致page-container的头部面包屑等区域被意外隐藏 ([03d3ea8](https://github.com/antdv-pro/antdv-pro/commit/03d3ea8))
+- Route switching may causepage-containerthe header, breadcrumbs, and other areas to be unexpectedly hidden ([03d3ea8](https://github.com/antdv-pro/antdv-pro/commit/03d3ea8))
 - Nested not change ([afa71cd](https://github.com/antdv-pro/antdv-pro/commit/afa71cd))
 
 ### 💅 Refactors
@@ -425,7 +425,7 @@
 - Aibayanyu <aibayanyu@qq.com>
 - Jiabochao ([@jiabochao](http://github.com/jiabochao))
 - Undefined ([@undefined-moe](http://github.com/undefined-moe))
-- 萍萍 ([@jiabochao](http://github.com/jiabochao))
+- Pingping ([@jiabochao](http://github.com/jiabochao))
 - Aibayanyu20 <aibayanyu@qq.com>
 - Unknown ([@aibayanyu20](http://github.com/aibayanyu20))
 
@@ -487,23 +487,23 @@
 
 - Add exception page ([e857135](https://github.com/antdv-pro/antdv-pro/commit/e857135))
 - Add mock server ([2fbecaf](https://github.com/antdv-pro/antdv-pro/commit/2fbecaf))
-- 增加结果页路由 ([14d20f8](https://github.com/antdv-pro/antdv-pro/commit/14d20f8))
-- 增加结果页i18n配置 ([0f51c7d](https://github.com/antdv-pro/antdv-pro/commit/0f51c7d))
-- 同步结果页成功页 #28 ([#28](https://github.com/antdv-pro/antdv-pro/issues/28))
-- 增加结果页路由 #29 ([#29](https://github.com/antdv-pro/antdv-pro/issues/29))
+- Add result page route ([14d20f8](https://github.com/antdv-pro/antdv-pro/commit/14d20f8))
+- Add result pagei18nConfiguration ([0f51c7d](https://github.com/antdv-pro/antdv-pro/commit/0f51c7d))
+- Synchronize result page success page #28 ([#28](https://github.com/antdv-pro/antdv-pro/issues/28))
+- Add result page route #29 ([#29](https://github.com/antdv-pro/antdv-pro/issues/29))
 - Add new result page ([ad6463e](https://github.com/antdv-pro/antdv-pro/commit/ad6463e))
 - Add spinning loader to iframe ([c75a3b8](https://github.com/antdv-pro/antdv-pro/commit/c75a3b8))
 - Add spinning loader to iframe ([888d183](https://github.com/antdv-pro/antdv-pro/commit/888d183))
 - Add login redirect ([70293ed](https://github.com/antdv-pro/antdv-pro/commit/70293ed))
-- 增加路由 ([ef72da5](https://github.com/antdv-pro/antdv-pro/commit/ef72da5))
-- 页面 ([39ff6d5](https://github.com/antdv-pro/antdv-pro/commit/39ff6d5))
-- 路由配置 ([2af830c](https://github.com/antdv-pro/antdv-pro/commit/2af830c))
+- Add route ([ef72da5](https://github.com/antdv-pro/antdv-pro/commit/ef72da5))
+- Page ([39ff6d5](https://github.com/antdv-pro/antdv-pro/commit/39ff6d5))
+- Route configuration ([2af830c](https://github.com/antdv-pro/antdv-pro/commit/2af830c))
 - Picocolors custom terminal ([2aca5fd](https://github.com/antdv-pro/antdv-pro/commit/2aca5fd))
 - Add basic profile i18n config ([fb2ac66](https://github.com/antdv-pro/antdv-pro/commit/fb2ac66))
 - Add basic profile router ([1e8b9e4](https://github.com/antdv-pro/antdv-pro/commit/1e8b9e4))
 - Add basic profile i18n config ([cba4ba1](https://github.com/antdv-pro/antdv-pro/commit/cba4ba1))
-- 新增列表数据接口 ([11b7c89](https://github.com/antdv-pro/antdv-pro/commit/11b7c89))
-- 新增列表数据请求方法 ([47bbd73](https://github.com/antdv-pro/antdv-pro/commit/47bbd73))
+- New list data interface ([11b7c89](https://github.com/antdv-pro/antdv-pro/commit/11b7c89))
+- New list data request method ([47bbd73](https://github.com/antdv-pro/antdv-pro/commit/47bbd73))
 - Add a tsconfig rule ([ebaee8d](https://github.com/antdv-pro/antdv-pro/commit/ebaee8d))
 - Basic-list page ([dea1394](https://github.com/antdv-pro/antdv-pro/commit/dea1394))
 - Add search list ([c95c6aa](https://github.com/antdv-pro/antdv-pro/commit/c95c6aa))
@@ -544,9 +544,9 @@
 - Add part of sales-card demo ([ac18ff6](https://github.com/antdv-pro/antdv-pro/commit/ac18ff6))
 - Delete useless code ([acbf99b](https://github.com/antdv-pro/antdv-pro/commit/acbf99b))
 - Complete sales-card demo ([ea9d0cd](https://github.com/antdv-pro/antdv-pro/commit/ea9d0cd))
-- Add 修改侧边栏可伸缩按钮位置 ([12cc61d](https://github.com/antdv-pro/antdv-pro/commit/12cc61d))
-- Add 修改侧边伸缩默认显示 ([4aebe57](https://github.com/antdv-pro/antdv-pro/commit/4aebe57))
-- Add 控制伸缩功能只在侧边布局生效 ([df0738c](https://github.com/antdv-pro/antdv-pro/commit/df0738c))
+- Add Modify the position of the sidebar collapsible button ([12cc61d](https://github.com/antdv-pro/antdv-pro/commit/12cc61d))
+- Add Modify the default display of the sidebar collapse ([4aebe57](https://github.com/antdv-pro/antdv-pro/commit/4aebe57))
+- Add Control the collapse function to be effective only in the side layout ([df0738c](https://github.com/antdv-pro/antdv-pro/commit/df0738c))
 - Complete number-info and top-search demo ([b0ceb48](https://github.com/antdv-pro/antdv-pro/commit/b0ceb48))
 - Complete proportion-sales demo ([be3b597](https://github.com/antdv-pro/antdv-pro/commit/be3b597))
 - Complete offline-data demo ([97cf972](https://github.com/antdv-pro/antdv-pro/commit/97cf972))
@@ -565,7 +565,7 @@
 
 ### 🔥 Performance
 
-- 优化单独监听路由浪费渲染性能 ([05a3d79](https://github.com/antdv-pro/antdv-pro/commit/05a3d79))
+- Optimize the waste of rendering performance by listening to routes individually ([05a3d79](https://github.com/antdv-pro/antdv-pro/commit/05a3d79))
 
 ### 🩹 Fixes
 
@@ -578,12 +578,12 @@
 - Success page type error ([71aa9ec](https://github.com/antdv-pro/antdv-pro/commit/71aa9ec))
 - Success page type error ([451afd0](https://github.com/antdv-pro/antdv-pro/commit/451afd0))
 - Remove console log ([8c8a2db](https://github.com/antdv-pro/antdv-pro/commit/8c8a2db))
-- 修改路由错误 ([0d5e75c](https://github.com/antdv-pro/antdv-pro/commit/0d5e75c))
+- Modify routing error ([0d5e75c](https://github.com/antdv-pro/antdv-pro/commit/0d5e75c))
 - Dark theme error ([2c08422](https://github.com/antdv-pro/antdv-pro/commit/2c08422))
 - Commit-msg-lint ([2a91560](https://github.com/antdv-pro/antdv-pro/commit/2a91560))
 - Commit-msg-lint ([8e47aae](https://github.com/antdv-pro/antdv-pro/commit/8e47aae))
 - Commit-msg-lint, remove trailing comma ([e578774](https://github.com/antdv-pro/antdv-pro/commit/e578774))
-- 修改错误配置 ([0dc9048](https://github.com/antdv-pro/antdv-pro/commit/0dc9048))
+- Modify error configuration ([0dc9048](https://github.com/antdv-pro/antdv-pro/commit/0dc9048))
 - Change dir name ([288e11c](https://github.com/antdv-pro/antdv-pro/commit/288e11c))
 - Fix qrcode ([1086a8d](https://github.com/antdv-pro/antdv-pro/commit/1086a8d))
 - Dark mode change error ([67ad773](https://github.com/antdv-pro/antdv-pro/commit/67ad773))
@@ -605,7 +605,7 @@
 - Validate not take effect ([d132d04](https://github.com/antdv-pro/antdv-pro/commit/d132d04))
 - Add page container ([706087c](https://github.com/antdv-pro/antdv-pro/commit/706087c))
 - Type ([7d8ccde](https://github.com/antdv-pro/antdv-pro/commit/7d8ccde))
-- 将新消息通知中的三个切换按钮的checked状态单独定义 ([c7a44b7](https://github.com/antdv-pro/antdv-pro/commit/c7a44b7))
+- The three toggle buttons in the new message notification will have theircheckedstates defined separately ([c7a44b7](https://github.com/antdv-pro/antdv-pro/commit/c7a44b7))
 - Footer tool bar support dark mode ([aae8cb3](https://github.com/antdv-pro/antdv-pro/commit/aae8cb3))
 - Fix radio-group ([e1a75b1](https://github.com/antdv-pro/antdv-pro/commit/e1a75b1))
 - Fix generate route ([b033198](https://github.com/antdv-pro/antdv-pro/commit/b033198))
@@ -617,7 +617,7 @@
 - Base-loading ui ([dfed9a9](https://github.com/antdv-pro/antdv-pro/commit/dfed9a9))
 - Modify route name to keep unique and basic form path ([69be62f](https://github.com/antdv-pro/antdv-pro/commit/69be62f))
 - Issues#68 ([#68](https://github.com/antdv-pro/antdv-pro/issues/68))
-- Add 删除打印和修正伸缩图标大小 ([22e74a8](https://github.com/antdv-pro/antdv-pro/commit/22e74a8))
+- Add Delete print and fix the size of the expand icon ([22e74a8](https://github.com/antdv-pro/antdv-pro/commit/22e74a8))
 - Add pagination ([a04e223](https://github.com/antdv-pro/antdv-pro/commit/a04e223))
 - Issue#81 ([#81](https://github.com/antdv-pro/antdv-pro/issues/81))
 - Mock server error close #86 ([#86](https://github.com/antdv-pro/antdv-pro/issues/86))
@@ -652,7 +652,7 @@
 - Add deps ([a014040](https://github.com/antdv-pro/antdv-pro/commit/a014040))
 - Add commit check ([ad43dc1](https://github.com/antdv-pro/antdv-pro/commit/ad43dc1))
 - Add .gitattributes ([cc821f4](https://github.com/antdv-pro/antdv-pro/commit/cc821f4))
-- 删减路径多余空格 ([1617c99](https://github.com/antdv-pro/antdv-pro/commit/1617c99))
+- Remove extra spaces in the path ([1617c99](https://github.com/antdv-pro/antdv-pro/commit/1617c99))
 - Change ci ([e4638d8](https://github.com/antdv-pro/antdv-pro/commit/e4638d8))
 - Add start date ([3de8ae4](https://github.com/antdv-pro/antdv-pro/commit/3de8ae4))
 - Types ([fd2f05f](https://github.com/antdv-pro/antdv-pro/commit/fd2f05f))
@@ -683,7 +683,7 @@
 - Change version ([c696770](https://github.com/antdv-pro/antdv-pro/commit/c696770))
 - Change pnpm-lock version ([caedc74](https://github.com/antdv-pro/antdv-pro/commit/caedc74))
 - Change ([747b6c2](https://github.com/antdv-pro/antdv-pro/commit/747b6c2))
-- 修改侧边菜单超出显示样式 ([368ffe0](https://github.com/antdv-pro/antdv-pro/commit/368ffe0))
+- Modify the style for side menu overflow ([368ffe0](https://github.com/antdv-pro/antdv-pro/commit/368ffe0))
 - Fix console error ([a08f428](https://github.com/antdv-pro/antdv-pro/commit/a08f428))
 - Use auto import ([4be2127](https://github.com/antdv-pro/antdv-pro/commit/4be2127))
 - **release:** V0.1.0 ([f6f3781](https://github.com/antdv-pro/antdv-pro/commit/f6f3781))
@@ -711,14 +711,14 @@
 - Aibayanyu20 <aibayanyu@qq.com>
 - Konv Suu <2583695112@qq.com>
 - AutismSuperman <fulinlin9527@outlook.com>
-- 杜天宇 <17862705909@163.com>
+- Du Tianyu <17862705909@163.com>
 - AShu-guo <guochengli97@163.com>
 - Sun1090 ([@Sun1090](http://github.com/Sun1090))
 - Undefined ([@undefined-moe](http://github.com/undefined-moe))
 - LC1 <chuan.liu@linkedsmile.com>
 - Yizhankui <2669587581@qq.com>
-- 张浩杰 ([@HavocZhang](http://github.com/HavocZhang))
-- 一个小瘪三 <10948399+menon-qiqi@user.noreply.gitee.com>
+- Zhang Haojie ([@HavocZhang](http://github.com/HavocZhang))
+- A little scoundrel <10948399+menon-qiqi@user.noreply.gitee.com>
 - Qi Yuhang <qiyuhang@thinkerx.com>
 - Qyh <tuhui@thinkerx.com>
 - Zev Zhu 
@@ -732,23 +732,23 @@
 
 - Add exception page ([e857135](https://github.com/antdv-pro/antdv-pro/commit/e857135))
 - Add mock server ([2fbecaf](https://github.com/antdv-pro/antdv-pro/commit/2fbecaf))
-- 增加结果页路由 ([14d20f8](https://github.com/antdv-pro/antdv-pro/commit/14d20f8))
-- 增加结果页i18n配置 ([0f51c7d](https://github.com/antdv-pro/antdv-pro/commit/0f51c7d))
-- 同步结果页成功页 #28 ([#28](https://github.com/antdv-pro/antdv-pro/issues/28))
-- 增加结果页路由 #29 ([#29](https://github.com/antdv-pro/antdv-pro/issues/29))
+- Add result page route ([14d20f8](https://github.com/antdv-pro/antdv-pro/commit/14d20f8))
+- Add result pagei18nConfiguration ([0f51c7d](https://github.com/antdv-pro/antdv-pro/commit/0f51c7d))
+- Synchronize result page success page #28 ([#28](https://github.com/antdv-pro/antdv-pro/issues/28))
+- Add result page route #29 ([#29](https://github.com/antdv-pro/antdv-pro/issues/29))
 - Add new result page ([ad6463e](https://github.com/antdv-pro/antdv-pro/commit/ad6463e))
 - Add spinning loader to iframe ([c75a3b8](https://github.com/antdv-pro/antdv-pro/commit/c75a3b8))
 - Add spinning loader to iframe ([888d183](https://github.com/antdv-pro/antdv-pro/commit/888d183))
 - Add login redirect ([70293ed](https://github.com/antdv-pro/antdv-pro/commit/70293ed))
-- 增加路由 ([ef72da5](https://github.com/antdv-pro/antdv-pro/commit/ef72da5))
-- 页面 ([39ff6d5](https://github.com/antdv-pro/antdv-pro/commit/39ff6d5))
-- 路由配置 ([2af830c](https://github.com/antdv-pro/antdv-pro/commit/2af830c))
+- Add route ([ef72da5](https://github.com/antdv-pro/antdv-pro/commit/ef72da5))
+- Page ([39ff6d5](https://github.com/antdv-pro/antdv-pro/commit/39ff6d5))
+- Route configuration ([2af830c](https://github.com/antdv-pro/antdv-pro/commit/2af830c))
 - Picocolors custom terminal ([2aca5fd](https://github.com/antdv-pro/antdv-pro/commit/2aca5fd))
 - Add basic profile i18n config ([fb2ac66](https://github.com/antdv-pro/antdv-pro/commit/fb2ac66))
 - Add basic profile router ([1e8b9e4](https://github.com/antdv-pro/antdv-pro/commit/1e8b9e4))
 - Add basic profile i18n config ([cba4ba1](https://github.com/antdv-pro/antdv-pro/commit/cba4ba1))
-- 新增列表数据接口 ([11b7c89](https://github.com/antdv-pro/antdv-pro/commit/11b7c89))
-- 新增列表数据请求方法 ([47bbd73](https://github.com/antdv-pro/antdv-pro/commit/47bbd73))
+- New list data interface ([11b7c89](https://github.com/antdv-pro/antdv-pro/commit/11b7c89))
+- New list data request method ([47bbd73](https://github.com/antdv-pro/antdv-pro/commit/47bbd73))
 - Add a tsconfig rule ([ebaee8d](https://github.com/antdv-pro/antdv-pro/commit/ebaee8d))
 - Basic-list page ([dea1394](https://github.com/antdv-pro/antdv-pro/commit/dea1394))
 - Add search list ([c95c6aa](https://github.com/antdv-pro/antdv-pro/commit/c95c6aa))
@@ -789,9 +789,9 @@
 - Add part of sales-card demo ([ac18ff6](https://github.com/antdv-pro/antdv-pro/commit/ac18ff6))
 - Delete useless code ([acbf99b](https://github.com/antdv-pro/antdv-pro/commit/acbf99b))
 - Complete sales-card demo ([ea9d0cd](https://github.com/antdv-pro/antdv-pro/commit/ea9d0cd))
-- Add 修改侧边栏可伸缩按钮位置 ([12cc61d](https://github.com/antdv-pro/antdv-pro/commit/12cc61d))
-- Add 修改侧边伸缩默认显示 ([4aebe57](https://github.com/antdv-pro/antdv-pro/commit/4aebe57))
-- Add 控制伸缩功能只在侧边布局生效 ([df0738c](https://github.com/antdv-pro/antdv-pro/commit/df0738c))
+- Add Modify the position of the sidebar collapsible button ([12cc61d](https://github.com/antdv-pro/antdv-pro/commit/12cc61d))
+- Add Modify the default display of the sidebar collapse ([4aebe57](https://github.com/antdv-pro/antdv-pro/commit/4aebe57))
+- Add Control the collapse function to be effective only in the side layout ([df0738c](https://github.com/antdv-pro/antdv-pro/commit/df0738c))
 - Complete number-info and top-search demo ([b0ceb48](https://github.com/antdv-pro/antdv-pro/commit/b0ceb48))
 - Complete proportion-sales demo ([be3b597](https://github.com/antdv-pro/antdv-pro/commit/be3b597))
 - Complete offline-data demo ([97cf972](https://github.com/antdv-pro/antdv-pro/commit/97cf972))
@@ -809,7 +809,7 @@
 
 ### 🔥 Performance
 
-- 优化单独监听路由浪费渲染性能 ([05a3d79](https://github.com/antdv-pro/antdv-pro/commit/05a3d79))
+- Optimize the waste of rendering performance by listening to routes individually ([05a3d79](https://github.com/antdv-pro/antdv-pro/commit/05a3d79))
 
 ### 🩹 Fixes
 
@@ -822,12 +822,12 @@
 - Success page type error ([71aa9ec](https://github.com/antdv-pro/antdv-pro/commit/71aa9ec))
 - Success page type error ([451afd0](https://github.com/antdv-pro/antdv-pro/commit/451afd0))
 - Remove console log ([8c8a2db](https://github.com/antdv-pro/antdv-pro/commit/8c8a2db))
-- 修改路由错误 ([0d5e75c](https://github.com/antdv-pro/antdv-pro/commit/0d5e75c))
+- Modify routing error ([0d5e75c](https://github.com/antdv-pro/antdv-pro/commit/0d5e75c))
 - Dark theme error ([2c08422](https://github.com/antdv-pro/antdv-pro/commit/2c08422))
 - Commit-msg-lint ([2a91560](https://github.com/antdv-pro/antdv-pro/commit/2a91560))
 - Commit-msg-lint ([8e47aae](https://github.com/antdv-pro/antdv-pro/commit/8e47aae))
 - Commit-msg-lint, remove trailing comma ([e578774](https://github.com/antdv-pro/antdv-pro/commit/e578774))
-- 修改错误配置 ([0dc9048](https://github.com/antdv-pro/antdv-pro/commit/0dc9048))
+- Modify error configuration ([0dc9048](https://github.com/antdv-pro/antdv-pro/commit/0dc9048))
 - Change dir name ([288e11c](https://github.com/antdv-pro/antdv-pro/commit/288e11c))
 - Fix qrcode ([1086a8d](https://github.com/antdv-pro/antdv-pro/commit/1086a8d))
 - Dark mode change error ([67ad773](https://github.com/antdv-pro/antdv-pro/commit/67ad773))
@@ -849,7 +849,7 @@
 - Validate not take effect ([d132d04](https://github.com/antdv-pro/antdv-pro/commit/d132d04))
 - Add page container ([706087c](https://github.com/antdv-pro/antdv-pro/commit/706087c))
 - Type ([7d8ccde](https://github.com/antdv-pro/antdv-pro/commit/7d8ccde))
-- 将新消息通知中的三个切换按钮的checked状态单独定义 ([c7a44b7](https://github.com/antdv-pro/antdv-pro/commit/c7a44b7))
+- The three toggle buttons in the new message notification will have theircheckedstates defined separately ([c7a44b7](https://github.com/antdv-pro/antdv-pro/commit/c7a44b7))
 - Footer tool bar support dark mode ([aae8cb3](https://github.com/antdv-pro/antdv-pro/commit/aae8cb3))
 - Fix radio-group ([e1a75b1](https://github.com/antdv-pro/antdv-pro/commit/e1a75b1))
 - Fix generate route ([b033198](https://github.com/antdv-pro/antdv-pro/commit/b033198))
@@ -861,7 +861,7 @@
 - Base-loading ui ([dfed9a9](https://github.com/antdv-pro/antdv-pro/commit/dfed9a9))
 - Modify route name to keep unique and basic form path ([69be62f](https://github.com/antdv-pro/antdv-pro/commit/69be62f))
 - Issues#68 ([#68](https://github.com/antdv-pro/antdv-pro/issues/68))
-- Add 删除打印和修正伸缩图标大小 ([22e74a8](https://github.com/antdv-pro/antdv-pro/commit/22e74a8))
+- Add Delete print and fix the size of the expand icon ([22e74a8](https://github.com/antdv-pro/antdv-pro/commit/22e74a8))
 - Add pagination ([a04e223](https://github.com/antdv-pro/antdv-pro/commit/a04e223))
 - Issue#81 ([#81](https://github.com/antdv-pro/antdv-pro/issues/81))
 - Mock server error close #86 ([#86](https://github.com/antdv-pro/antdv-pro/issues/86))
@@ -895,7 +895,7 @@
 - Add deps ([a014040](https://github.com/antdv-pro/antdv-pro/commit/a014040))
 - Add commit check ([ad43dc1](https://github.com/antdv-pro/antdv-pro/commit/ad43dc1))
 - Add .gitattributes ([cc821f4](https://github.com/antdv-pro/antdv-pro/commit/cc821f4))
-- 删减路径多余空格 ([1617c99](https://github.com/antdv-pro/antdv-pro/commit/1617c99))
+- Remove extra spaces in the path ([1617c99](https://github.com/antdv-pro/antdv-pro/commit/1617c99))
 - Change ci ([e4638d8](https://github.com/antdv-pro/antdv-pro/commit/e4638d8))
 - Add start date ([3de8ae4](https://github.com/antdv-pro/antdv-pro/commit/3de8ae4))
 - Types ([fd2f05f](https://github.com/antdv-pro/antdv-pro/commit/fd2f05f))
@@ -926,7 +926,7 @@
 - Change version ([c696770](https://github.com/antdv-pro/antdv-pro/commit/c696770))
 - Change pnpm-lock version ([caedc74](https://github.com/antdv-pro/antdv-pro/commit/caedc74))
 - Change ([747b6c2](https://github.com/antdv-pro/antdv-pro/commit/747b6c2))
-- 修改侧边菜单超出显示样式 ([368ffe0](https://github.com/antdv-pro/antdv-pro/commit/368ffe0))
+- Modify the style for side menu overflow ([368ffe0](https://github.com/antdv-pro/antdv-pro/commit/368ffe0))
 - Fix console error ([a08f428](https://github.com/antdv-pro/antdv-pro/commit/a08f428))
 - Use auto import ([4be2127](https://github.com/antdv-pro/antdv-pro/commit/4be2127))
 
@@ -949,15 +949,15 @@
 - Aibayanyu <aibayanyu@qq.com>
 - Konv Suu <2583695112@qq.com>
 - AutismSuperman <fulinlin9527@outlook.com>
-- 杜天宇 <17862705909@163.com>
+- Du Tianyu <17862705909@163.com>
 - AShu-guo <guochengli97@163.com>
 - Sun1090 ([@Sun1090](http://github.com/Sun1090))
 - Undefined ([@undefined-moe](http://github.com/undefined-moe))
 - LC1 <chuan.liu@linkedsmile.com>
 - Kirk Lin ([@kirklin](http://github.com/kirklin))
 - Yizhankui <2669587581@qq.com>
-- 张浩杰 ([@HavocZhang](http://github.com/HavocZhang))
-- 一个小瘪三 <10948399+menon-qiqi@user.noreply.gitee.com>
+- Zhang Haojie ([@HavocZhang](http://github.com/HavocZhang))
+- A little scoundrel <10948399+menon-qiqi@user.noreply.gitee.com>
 - Qi Yuhang <qiyuhang@thinkerx.com>
 - Qyh <tuhui@thinkerx.com>
 - Zev Zhu 
@@ -1191,7 +1191,7 @@
 
 - Zev Zhu 
 - Aibayanyu <aibayanyu@qq.com>
-- 杜天宇 <17862705909@163.com>
+- Du Tianyu <17862705909@163.com>
 - Aibayanyu20 <aibayanyu@qq.com>
 
 ## v0.0.10

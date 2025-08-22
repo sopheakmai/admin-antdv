@@ -28,7 +28,7 @@ const state = reactive({
       scopedSlots: { customRender: "name" },
     },
     {
-      title: "工号",
+      title: "Employee ID",
       dataIndex: "workId",
       key: "workId",
       width: "20%",
@@ -125,11 +125,11 @@ function remove(key: string) {
     </a-space>
     <FooterToolBar>
       <template #left>
-        测试
+        Test
       </template>
       <template #right>
         <a-button type="primary" @click="handleSubmit">
-          提交
+          Submit
         </a-button>
       </template>
     </FooterToolBar>

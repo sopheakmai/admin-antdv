@@ -68,8 +68,8 @@ const data = ref([
               </div>
             </template>
             <template #actions>
-              <li>操作一</li>
-              <li>操作二</li>
+              <li>Operation one</li>
+              <li>Operation two</li>
             </template>
           </a-card>
         </a-col>

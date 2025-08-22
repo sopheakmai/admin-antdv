@@ -22,15 +22,15 @@ const columns = shallowRef([
     dataIndex: "name",
   },
   {
-    title: "描述",
+    title: "Description",
     dataIndex: "desc",
   },
   {
-    title: "服务调用次数",
+    title: "Service call count",
     dataIndex: "callNo",
   },
   {
-    title: "状态",
+    title: "Status",
     dataIndex: "status",
     width: 100,
   },
@@ -53,7 +53,7 @@ const pagination = reactive<PaginationProps>({
   total: 100,
   showSizeChanger: true,
   showQuickJumper: true,
-  showTotal: total => `总数据位：${total}`,
+  showTotal: total => `Total data position：${total}`,
   onChange(current, pageSize) {
     pagination.pageSize = pageSize;
     pagination.current = current;
@@ -137,7 +137,7 @@ async function onSearch() {
 }
 
 async function onReset() {
-  // 清空所有参数重新请求
+  // Clear all parameters and request again
   formModel.name = undefined;
   formModel.desc = undefined;
   await init();
@@ -154,7 +154,7 @@ async function handleDelete(record: ConsultTableModel) {
     const res = await deleteApi(record!.id);
     if (res.code === 200)
       await init();
-    message.success("删除成功");
+    message.success("Successfully deleted");
   }
   catch (e) {
     console.log(e);
@@ -189,14 +189,14 @@ const handleSizeChange: MenuProps["onClick"] = (e) => {
 function filterAction(value: string[]) {
   return columns.value.filter((item) => {
     if (value.includes(item.dataIndex)) {
-      // 为true时，循环遍历的值会暴露出去
+      // istruewhen，The value of the loop will be exposed
       return true;
     }
     return false;
   });
 }
 
-// 备份columns
+// Backupcolumns
 const filterColumns = ref(filterAction(getCheckList.value));
 
 /**
@@ -256,19 +256,19 @@ const expand = ref(false);
             </a-form-item>
           </a-col>
           <a-col :span="8">
-            <a-form-item name="desc" label="描述">
+            <a-form-item name="desc" label="Description">
               <a-input v-model:value="formModel.desc" />
             </a-form-item>
           </a-col>
           <a-col :span="8">
-            <a-form-item name="updatedAt" label="上次调用时间">
+            <a-form-item name="updatedAt" label="Last call time">
               <a-date-picker v-model:value="formModel.updatedAt" style="width: 100%" />
             </a-form-item>
           </a-col>
         </a-row>
         <a-row v-if="expand" :gutter="[15, 0]">
           <a-col :span="8">
-            <a-form-item name="status" label="状态">
+            <a-form-item name="status" label="Status">
               <a-select
                 v-model:value="formModel.status"
               >
@@ -288,7 +288,7 @@ const expand = ref(false);
             </a-form-item>
           </a-col>
           <a-col :span="8">
-            <a-form-item name="callNo" label="服务调用次数">
+            <a-form-item name="callNo" label="Service call count">
               <a-input-number v-model:value="formModel.callNo" style="width: 100%" />
             </a-form-item>
           </a-col>
@@ -303,7 +303,7 @@ const expand = ref(false);
                 重置
               </a-button>
               <a-button type="link" @click="expand = !expand">
-                {{ expand ? '收起' : '展开' }}
+                {{ expand ? 'Collapse' : '展开' }}
                 <UpOutlined v-if="expand" />
                 <DownOutlined v-else />
               </a-button>
@@ -313,7 +313,7 @@ const expand = ref(false);
       </a-form>
     </a-card>
 
-    <a-card title="查询表格">
+    <a-card title="Query table">
       <template #extra>
         <a-space size="middle">
           <a-button type="primary" @click="() => open = true">
@@ -360,7 +360,7 @@ const expand = ref(false);
           <template v-if="scope?.column?.dataIndex === 'action'">
             <div flex gap-2>
               <a c-error @click="handleDelete(scope?.record as ConsultTableModel)">
-                删除
+                Delete
               </a>
             </div>
           </template>
@@ -375,8 +375,8 @@ const expand = ref(false);
 
     <a-modal v-model:open="open" title="新建规则" width="400px" @ok="handleOk">
       <a-space direction="vertical" size="large" class="w-full">
-        <a-input placeholder="请输入" />
-        <a-textarea placeholder="请输入" />
+        <a-input placeholder="Please enter" />
+        <a-textarea placeholder="Please enter" />
       </a-space>
     </a-modal>
   </page-container>

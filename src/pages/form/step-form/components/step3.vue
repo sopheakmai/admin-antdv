@@ -43,7 +43,7 @@ function toOrderList() {
               转账金额：
             </a-col>
             <a-col :sm="16" :xs="24">
-              <span class="money">1,000,000</span> 元
+              <span class="money">1,000,000</span> yuan
             </a-col>
           </a-row>
         </div>

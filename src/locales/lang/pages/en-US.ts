@@ -125,7 +125,7 @@ export default {
   "form.basic-form.password.required": "Please enter your password!",
   "form.basic-form.password.twice": "The passwords entered twice do not match!",
   "form.basic-form.strength.msg":
-      "Please enter at least 6 characters and don't use passwords that are easy to guess.",
+      "Please enter at least 6 characters and donot use passwords that are easy to guess.",
   "form.basic-form.strength.strong": "Strength: strong",
   "form.basic-form.strength.medium": "Strength: medium",
   "form.basic-form.strength.short": "Strength: too short",

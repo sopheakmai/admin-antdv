@@ -24,7 +24,7 @@ const { t } = useI18n();
       </a-descriptions-item>
     </a-descriptions>
     <a-divider style="margin-bottom: 32px" />
-    <!-- 信息组 -->
+    <!-- Information group -->
     <a-descriptions :title="t('profile.advanced.group')">
       <a-descriptions-item :label="t('profile.advanced.group-data')">
         688

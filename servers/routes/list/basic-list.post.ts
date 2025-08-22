@@ -26,73 +26,73 @@ export default defineEventHandler(async (_event) => {
       title: "Aipay",
       link: "https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png",
       percent: 57,
-      content: "一生那么短，遗忘又那么漫长",
+      content: "Life is so short，And forgetting is so long",
     },
     {
       title: "Ant Design Vue",
       link: "https://www.antdv.com/assets/logo.1ef800a8.svg",
       percent: 60,
       status: "active",
-      content: "只有在梦想中，人才能真正自由",
+      content: "Only in dreams，can a person be truly free",
     },
     {
       title: "Vue",
       link: "https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png",
       percent: 70,
       status: "exception",
-      content: "生命就像一盒巧克力，结果往往出人意料",
+      content: "Life is like a box of chocolates，The results are often unexpected",
     },
     {
       title: "Vite",
       link: "https://cn.vitejs.dev/logo.svg",
       percent: 100,
       status: "active",
-      content: "有时，你必须进入别人的世界去发现自己的世界缺少什么",
+      content: "Sometimes，you have to enter other peopleisworlds to find out whatismissing in your own",
     },
     {
       title: "React",
       link: "https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png",
       percent: 50,
       status: "exception",
-      content: "希望是件美丽的东西，也许是最好的东西",
+      content: "Hope is a beautiful thing，Maybe the best of things",
     },
     {
       title: "Antdv Pro",
       link: "/logo.svg",
       percent: 80,
       status: "active",
-      content: "人并非生来就伟大，而是越活越伟大",
+      content: "People are not born great，They grow great",
     },
     {
       title: "Webpack",
       link: "https://gw.alipayobjects.com/zos/rmsportal/nxkuOJlFJuAUhzlMTCEe.png",
       percent: 58,
-      content: "不管何时何地，做你想做的事永远都不嫌晚",
+      content: "No matter when or where，itisnever too late to do what you want to do",
     },
     {
       title: "Angular",
       link: "https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png",
       percent: 70,
       status: "active",
-      content: "你要一直不停地往前走，不然你不会知道生活还会给你什么",
+      content: "You have to keep moving forward，Otherwise you wonot know what life will give you next",
     },
   ];
 
   const data: any[] = [];
 
-  // 数据复制
+  // Data replication
   for (let i = 0; i < 1000; i++) {
     const arr = cloneDeep(dataList);
     data.push(...arr);
   }
 
-  // 配置任务时间
+  // Configure task time
   for (let i = 0; i < data.length; i++)
     data[i].start = dayjs().subtract(i, "hour").format("YYYY-MM-DD HH:mm");
 
   return {
     code: 200,
-    msg: "获取成功",
+    msg: "Successfully retrieved",
     data,
   };
 });

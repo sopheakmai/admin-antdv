@@ -13,11 +13,11 @@ const columns = shallowRef([
     dataIndex: "name",
   },
   {
-    title: "值",
+    title: "Value",
     dataIndex: "value",
   },
   {
-    title: "描述",
+    title: "Description",
     dataIndex: "remark",
   },
   {
@@ -43,12 +43,12 @@ const crudTableModal = ref<InstanceType<typeof CrudTableModal>>();
 
 async function handleDelete(record: CrudTableModel) {
   if (!record.id)
-    return message.error("id 不能为空");
+    return message.error("id Cannot be empty");
   try {
     const res = await deleteApi(record.id);
     if (res.code === 200)
       await query();
-    message.success("删除成功");
+    message.success("Successfully deleted");
   }
   catch (e) {
     console.log(e);
@@ -78,12 +78,12 @@ function handleEdit(record: CrudTableModel) {
             </a-form-item>
           </a-col>
           <a-col :span="6">
-            <a-form-item name="value" label="值">
+            <a-form-item name="value" label="Value">
               <a-input v-model:value="state.queryParams.value" placeholder="请输入值" />
             </a-form-item>
           </a-col>
           <a-col :span="6">
-            <a-form-item name="remark" label="备注">
+            <a-form-item name="remark" label="Notes">
               <a-input v-model:value="state.queryParams.remark" placeholder="请输入备注" />
             </a-form-item>
           </a-col>
@@ -101,7 +101,7 @@ function handleEdit(record: CrudTableModel) {
       </a-form>
     </a-card>
 
-    <a-card title="增删改查表格">
+    <a-card title="CRUD table">
       <template #extra>
         <a-space size="middle">
           <a-button type="primary" @click="handleAdd">
@@ -127,7 +127,7 @@ function handleEdit(record: CrudTableModel) {
                 @confirm="handleDelete(scope?.record as CrudTableModel)"
               >
                 <a-button type="link">
-                  删除
+                  Delete
                 </a-button>
               </a-popconfirm>
             </div>

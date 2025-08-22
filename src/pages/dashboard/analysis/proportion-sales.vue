@@ -37,7 +37,7 @@ function renderPie(container: any, data: any) {
     interactions: [{ type: "element-selected" }, { type: "element-active" }],
     statistic: {
       title: {
-        content: "销售额",
+        content: "Sales amount",
       },
     },
   });
@@ -47,75 +47,75 @@ function renderPie(container: any, data: any) {
 
 const salesTypeData = [
   {
-    x: "家用电器",
+    x: "Home appliances",
     y: 4544,
   },
   {
-    x: "食用酒水",
+    x: "Edible beverages",
     y: 3321,
   },
   {
-    x: "个护健康",
+    x: "Personal care and health",
     y: 3113,
   },
   {
-    x: "服饰箱包",
+    x: "Clothing and bags",
     y: 2341,
   },
   {
-    x: "母婴产品",
+    x: "Maternal and infant products",
     y: 1231,
   },
   {
-    x: "其他",
+    x: "Other",
     y: 1231,
   },
 ];
 const salesTypeDataOnline = [
   {
-    x: "家用电器",
+    x: "Home appliances",
     y: 244,
   },
   {
-    x: "食用酒水",
+    x: "Edible beverages",
     y: 321,
   },
   {
-    x: "个护健康",
+    x: "Personal care and health",
     y: 311,
   },
   {
-    x: "服饰箱包",
+    x: "Clothing and bags",
     y: 41,
   },
   {
-    x: "母婴产品",
+    x: "Maternal and infant products",
     y: 121,
   },
   {
-    x: "其他",
+    x: "Other",
     y: 111,
   },
 ];
 const salesTypeDataOffline = [
   {
-    x: "家用电器",
+    x: "Home appliances",
     y: 99,
   },
   {
-    x: "食用酒水",
+    x: "Edible beverages",
     y: 188,
   },
   {
-    x: "个护健康",
+    x: "Personal care and health",
     y: 344,
   },
   {
-    x: "服饰箱包",
+    x: "Clothing and bags",
     y: 255,
   },
   {
-    x: "其他",
+    x: "Other",
     y: 65,
   },
 ];
@@ -139,7 +139,7 @@ onUnmounted(() => {
     :loading="loading"
     class="salesCard"
     :bordered="false"
-    title="销售额类别占比"
+    title="Sales category proportion"
     :style="{
       height: '100%',
     }"
@@ -149,8 +149,8 @@ onUnmounted(() => {
         <a-dropdown placement="bottomRight">
           <template #overlay>
             <a-menu>
-              <a-menu-item>操作一</a-menu-item>
-              <a-menu-item>操作二</a-menu-item>
+              <a-menu-item>Operation one</a-menu-item>
+              <a-menu-item>Operation two</a-menu-item>
             </a-menu>
           </template>
           <EllipsisOutlined />
@@ -158,20 +158,20 @@ onUnmounted(() => {
         <div class="salesTypeRadio">
           <a-radio-group :value="salesType" @change="handleChangeSalesType">
             <a-radio-button value="all">
-              全部渠道
+              All channels
             </a-radio-button>
             <a-radio-button value="online">
-              线上
+              Online
             </a-radio-button>
             <a-radio-button value="stores">
-              门店
+              Store
             </a-radio-button>
           </a-radio-group>
         </div>
       </div>
     </template>
     <div>
-      <a-typography-text>销售额</a-typography-text>
+      <a-typography-text>Sales amount</a-typography-text>
       <div v-show="salesType === 'all'" ref="pieContainer1" />
       <div v-show="salesType === 'online'" ref="pieContainer2" />
       <div v-show="salesType === 'stores'" ref="pieContainer3" />

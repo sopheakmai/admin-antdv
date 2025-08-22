@@ -62,7 +62,7 @@ const prefixCls = shallowRef("ant-pro-drawer-setting");
 const { message } = useGlobalConfig();
 function copySetting() {
   copy(JSON.stringify(props.layoutSetting ?? {}));
-  message?.success(props?.t?.("app.setting.copyinfo", "拷贝成功，请到 config/default-settings.js 中替换默认配置"));
+  message?.success(props?.t?.("app.setting.copyinfo", "Successfully copied，Please go to config/default-settings.js to replace the default configuration"));
 }
 function handleVisible(open: boolean) {
   emit("update:open", open);
@@ -134,7 +134,7 @@ const { token } = useAntdToken();
       </div>
     </template>
     <div :class="`${prefixCls}-content`">
-      <Body :title="t?.('app.setting.pagestyle') ?? '整体风格设计'">
+      <Body :title="t?.('app.setting.pagestyle') ?? 'Overall style design'">
         <div :class="`${prefixCls}-block-checkbox`">
           <BlockCheckbox
             :t="t"
@@ -160,11 +160,11 @@ const { token } = useAntdToken();
           />
         </div>
       </Body>
-      <Body :title="t?.('app.setting.themecolor') ?? '主题色'">
+      <Body :title="t?.('app.setting.themecolor') ?? 'Theme color'">
         <ThemeColor :t="t" :color-list="colorList" :color="colorPrimary" @change="changeColor" />
       </Body>
       <a-divider />
-      <Body :title="t?.('app.setting.pagestyle.mode') ?? '导航模式'">
+      <Body :title="t?.('app.setting.pagestyle.mode') ?? 'Navigation mode'">
         <div :class="`${prefixCls}-block-checkbox`">
           <BlockCheckbox
             :t="t"
@@ -203,7 +203,7 @@ const { token } = useAntdToken();
         @change-setting="changeSettingLayout"
       />
       <a-divider />
-      <Body :title="t?.('app.setting.content-area.title') ?? '内容区域'">
+      <Body :title="t?.('app.setting.content-area.title') ?? 'Content area'">
         <RegionalSetting
           :t="t"
           :layout="layout"
@@ -220,7 +220,7 @@ const { token } = useAntdToken();
         />
       </Body>
       <a-divider />
-      <Body :title="t?.('app.setting.othersettings') ?? '其他设置'">
+      <Body :title="t?.('app.setting.othersettings') ?? 'Other settings'">
         <OtherSetting :t="t" :color-weak="colorWeak" :color-gray="colorGray" @change-setting="changeSettingLayout" />
       </Body>
       <a-divider />
@@ -231,7 +231,7 @@ const { token } = useAntdToken();
             show-icon
             :message="
               t?.('app.setting.production.hint')
-                ?? '配置栏只在开发环境用于预览，生产环境不会展现，请拷贝后手动修改配置文件'
+                ?? 'The configuration bar is only for preview in the development environment，It will not be displayed in the production environment，Please copy and manually modify the configuration file'
             "
           >
             <template #icon>
@@ -239,7 +239,7 @@ const { token } = useAntdToken();
             </template>
           </a-alert>
           <a-button @click="copySetting">
-            <CopyOutlined /> {{ t?.('app.setting.copy', '拷贝设置') }}
+            <CopyOutlined /> {{ t?.('app.setting.copy', 'Copy settings') }}
           </a-button>
         </div>
       </Body>

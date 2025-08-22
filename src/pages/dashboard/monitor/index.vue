@@ -14,502 +14,502 @@ const deadline = Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30;
 
 const wordCloudData = [
   {
-    name: "三亚市",
+    name: "Sanya City",
     value: 69,
     type: 1,
   },
   {
-    name: "白山市",
+    name: "Baishan City",
     value: 70,
     type: 2,
   },
   {
-    name: "石嘴山市",
+    name: "Shizuishan City",
     value: 96,
     type: 1,
   },
   {
-    name: "红河哈尼族彝族自治州",
+    name: "Honghe Hani and Yi Autonomous Prefecture",
     value: 36,
     type: 1,
   },
   {
-    name: "香港岛",
+    name: "Hong Kong Island",
     value: 53,
     type: 1,
   },
   {
-    name: "三亚市",
+    name: "Sanya City",
     value: 90,
     type: 0,
   },
   {
-    name: "楚雄彝族自治州",
+    name: "Chuxiong Yi Autonomous Prefecture",
     value: 6,
     type: 1,
   },
   {
-    name: "长治市",
+    name: "Changzhi City",
     value: 59,
     type: 2,
   },
   {
-    name: "三沙市",
+    name: "Sansha City",
     value: 16,
     type: 2,
   },
   {
-    name: "泉州市",
+    name: "Quanzhou City",
     value: 87,
     type: 1,
   },
   {
-    name: "安顺市",
+    name: "Anshun City",
     value: 55,
     type: 2,
   },
   {
-    name: "清远市",
+    name: "Qingyuan City",
     value: 98,
     type: 1,
   },
   {
-    name: "亳州市",
+    name: "Bozhou City",
     value: 2,
     type: 1,
   },
   {
-    name: "重庆市",
+    name: "Chongqing City",
     value: 47,
     type: 0,
   },
   {
-    name: "来宾市",
+    name: "Laibin City",
     value: 61,
     type: 0,
   },
   {
-    name: "嘉义县",
+    name: "Chiayi County",
     value: 36,
     type: 1,
   },
   {
-    name: "宝鸡市",
+    name: "Baoji City",
     value: 44,
     type: 1,
   },
   {
-    name: "宜昌市",
+    name: "Yichang City",
     value: 95,
     type: 1,
   },
   {
-    name: "沧州市",
+    name: "Cangzhou City",
     value: 63,
     type: 0,
   },
   {
-    name: "海南藏族自治州",
+    name: "Hainan Tibetan Autonomous Prefecture",
     value: 89,
     type: 1,
   },
   {
-    name: "雅安市",
+    name: "Ya'an City",
     value: 17,
     type: 0,
   },
   {
-    name: "白银市",
+    name: "Baiyin City",
     value: 44,
     type: 2,
   },
   {
-    name: "临汾市",
+    name: "Linfen City",
     value: 21,
     type: 1,
   },
   {
-    name: "苏州市",
+    name: "Suzhou City",
     value: 65,
     type: 1,
   },
   {
-    name: "新界",
+    name: "New Territories",
     value: 84,
     type: 2,
   },
   {
-    name: "榆林市",
+    name: "Yulin City",
     value: 80,
     type: 1,
   },
   {
-    name: "三沙市",
+    name: "Sansha City",
     value: 24,
     type: 1,
   },
   {
-    name: "威海市",
+    name: "Weihai City",
     value: 24,
     type: 1,
   },
   {
-    name: "泰州市",
+    name: "Taizhou City",
     value: 82,
     type: 1,
   },
   {
-    name: "克拉玛依市",
+    name: "Karamay City",
     value: 30,
     type: 1,
   },
   {
-    name: "邯郸市",
+    name: "Handan City",
     value: 72,
     type: 1,
   },
   {
-    name: "亳州市",
+    name: "Bozhou City",
     value: 57,
     type: 1,
   },
   {
-    name: "荆门市",
+    name: "Jingmen City",
     value: 82,
     type: 2,
   },
   {
-    name: "宜昌市",
+    name: "Yichang City",
     value: 98,
     type: 1,
   },
   {
-    name: "伊犁哈萨克自治州",
+    name: "Ili Kazakh Autonomous Prefecture",
     value: 90,
     type: 1,
   },
   {
-    name: "柳州市",
+    name: "Liuzhou City",
     value: 26,
     type: 1,
   },
   {
-    name: "日照市",
+    name: "Rizhao City",
     value: 10,
     type: 0,
   },
   {
-    name: "石嘴山市",
+    name: "Shizuishan City",
     value: 9,
     type: 2,
   },
   {
-    name: "铁岭市",
+    name: "Tieling City",
     value: 60,
     type: 1,
   },
   {
-    name: "济南市",
+    name: "Jinan City",
     value: 55,
     type: 1,
   },
   {
-    name: "三沙市",
+    name: "Sansha City",
     value: 80,
     type: 0,
   },
   {
-    name: "临沂市",
+    name: "Linyi City",
     value: 62,
     type: 1,
   },
   {
-    name: "鸡西市",
+    name: "Jixi City",
     value: 52,
     type: 2,
   },
   {
-    name: "阿里地区",
+    name: "Ngari Prefecture",
     value: 96,
     type: 0,
   },
   {
-    name: "阿拉善盟",
+    name: "Alxa League",
     value: 43,
     type: 1,
   },
   {
-    name: "舟山市",
+    name: "Zhoushan City",
     value: 85,
     type: 1,
   },
   {
-    name: "澳门半岛",
+    name: "Macau Peninsula",
     value: 11,
     type: 0,
   },
   {
-    name: "泰州市",
+    name: "Taizhou City",
     value: 48,
     type: 0,
   },
   {
-    name: "杭州市",
+    name: "Hangzhou City",
     value: 61,
     type: 1,
   },
   {
-    name: "金门县",
+    name: "Kinmen County",
     value: 97,
     type: 2,
   },
   {
-    name: "嘉兴市",
+    name: "Jiaxing City",
     value: 67,
     type: 1,
   },
   {
-    name: "潍坊市",
+    name: "Weifang City",
     value: 35,
     type: 0,
   },
   {
-    name: "北海市",
+    name: "Beihai City",
     value: 46,
     type: 1,
   },
   {
-    name: "本溪市",
+    name: "Benxi City",
     value: 72,
     type: 2,
   },
   {
-    name: "龙岩市",
+    name: "Longyan City",
     value: 8,
     type: 1,
   },
   {
-    name: "澳门半岛",
+    name: "Macau Peninsula",
     value: 53,
     type: 1,
   },
   {
-    name: "黔西南布依族苗族自治州",
+    name: "Qianxinan Buyi and Miao Autonomous Prefecture",
     value: 89,
     type: 0,
   },
   {
-    name: "无锡市",
+    name: "Wuxi City",
     value: 66,
     type: 1,
   },
   {
-    name: "九龙",
+    name: "Kowloon",
     value: 68,
     type: 0,
   },
   {
-    name: "海东市",
+    name: "Haidong City",
     value: 78,
     type: 1,
   },
   {
-    name: "安阳市",
+    name: "Anyang City",
     value: 16,
     type: 1,
   },
   {
-    name: "黔南布依族苗族自治州",
+    name: "Qiannan Buyi and Miao Autonomous Prefecture",
     value: 36,
     type: 1,
   },
   {
-    name: "陇南市",
+    name: "Longnan City",
     value: 42,
     type: 1,
   },
   {
-    name: "香港岛",
+    name: "Hong Kong Island",
     value: 24,
     type: 0,
   },
   {
-    name: "安阳市",
+    name: "Anyang City",
     value: 11,
     type: 0,
   },
   {
-    name: "离岛",
+    name: "Islands District",
     value: 24,
     type: 1,
   },
   {
-    name: "海东市",
+    name: "Haidong City",
     value: 94,
     type: 0,
   },
   {
-    name: "汕头市",
+    name: "Shantou City",
     value: 6,
     type: 0,
   },
   {
-    name: "枣庄市",
+    name: "Zaozhuang City",
     value: 52,
     type: 1,
   },
   {
-    name: "德州市",
+    name: "Dezhou City",
     value: 88,
     type: 1,
   },
   {
-    name: "离岛",
+    name: "Islands District",
     value: 18,
     type: 1,
   },
   {
-    name: "临汾市",
+    name: "Linfen City",
     value: 91,
     type: 0,
   },
   {
-    name: "牡丹江市",
+    name: "Mudanjiang City",
     value: 34,
     type: 1,
   },
   {
-    name: "离岛",
+    name: "Islands District",
     value: 64,
     type: 1,
   },
   {
-    name: "丽水市",
+    name: "Lishui City",
     value: 33,
     type: 1,
   },
   {
-    name: "聊城市",
+    name: "Liaocheng City",
     value: 48,
     type: 1,
   },
   {
-    name: "钦州市",
+    name: "Qinzhou City",
     value: 13,
     type: 1,
   },
   {
-    name: "嘉兴市",
+    name: "Jiaxing City",
     value: 74,
     type: 2,
   },
   {
-    name: "莆田市",
+    name: "Putian City",
     value: 67,
     type: 1,
   },
   {
-    name: "萍乡市",
+    name: "Pingxiang City",
     value: 39,
     type: 1,
   },
   {
-    name: "北京市",
+    name: "Beijing City",
     value: 25,
     type: 1,
   },
   {
-    name: "九龙",
+    name: "Kowloon",
     value: 39,
     type: 1,
   },
   {
-    name: "临沧市",
+    name: "Lincang City",
     value: 65,
     type: 1,
   },
   {
-    name: "桂林市",
+    name: "Guilin City",
     value: 1,
     type: 0,
   },
   {
-    name: "黑河市",
+    name: "Heihe City",
     value: 72,
     type: 1,
   },
   {
-    name: "宿州市",
+    name: "Suzhou City",
     value: 15,
     type: 1,
   },
   {
-    name: "呼和浩特市",
+    name: "Hohhot City",
     value: 41,
     type: 2,
   },
   {
-    name: "岳阳市",
+    name: "Yueyang City",
     value: 72,
     type: 0,
   },
   {
-    name: "安顺市",
+    name: "Anshun City",
     value: 13,
     type: 2,
   },
   {
-    name: "营口市",
+    name: "Yingkou City",
     value: 33,
     type: 2,
   },
   {
-    name: "山南地区",
+    name: "Shannan Prefecture",
     value: 11,
     type: 2,
   },
   {
-    name: "南投县",
+    name: "Nantou County",
     value: 5,
     type: 2,
   },
   {
-    name: "乌海市",
+    name: "Wuhai City",
     value: 56,
     type: 2,
   },
   {
-    name: "丹东市",
+    name: "Dandong City",
     value: 100,
     type: 2,
   },
   {
-    name: "中卫市",
+    name: "Zhongwei City",
     value: 76,
     type: 0,
   },
   {
-    name: "庆阳市",
+    name: "Qingyang City",
     value: 23,
     type: 1,
   },
   {
-    name: "遵义市",
+    name: "Zunyi City",
     value: 56,
     type: 0,
   },
   {
-    name: "晋中市",
+    name: "Jinzhong City",
     value: 6,
     type: 0,
   },
   {
-    name: "河源市",
+    name: "Heyuan City",
     value: 34,
     type: 0,
   },
   {
-    name: "烟台市",
+    name: "Yantai City",
     value: 95,
     type: 0,
   },
@@ -542,7 +542,7 @@ onMounted(() => {
     },
     statistic: {
       content: {
-        content: "优",
+        content: "Excellent",
         style: {
           color: "#30bf78",
         },
@@ -583,11 +583,11 @@ onMounted(() => {
     wordStyle: {
       fontSize: [10, 20],
     },
-    // 设置交互类型
+    // Set interaction type
     interactions: [{ type: "element-active" }],
     state: {
       active: {
-        // 这里可以设置 active 时的样式
+        // Here you can set active style when
         style: {
           lineWidth: 3,
         },
@@ -620,23 +620,23 @@ onMounted(() => {
   <page-container>
     <a-row :gutter="24">
       <a-col :xl="18" :lg="24" :md="24" :sm="24" :xs="24" :style="{ marginBottom: '24px' }">
-        <a-card title="活动实时交易情况" :bordered="false">
+        <a-card title="Real-time transaction status of the event" :bordered="false">
           <a-row>
             <a-col :md="6" :sm="12" :xs="24">
               <a-statistic
-                title="今日交易总额"
-                suffix="元"
+                title="Todayistotal transaction amount"
+                suffix="yuan"
                 :value="convertNumber(124543233)"
               />
             </a-col>
             <a-col :md="6" :sm="12" :xs="24">
-              <a-statistic title="销售目标完成率" value="92%" />
+              <a-statistic title="Sales target completion rate" value="92%" />
             </a-col>
             <a-col :md="6" :sm="12" :xs="24">
-              <a-statistic-countdown title="活动剩余时间" :value="deadline" format="HH:mm:ss:SSS" />
+              <a-statistic-countdown title="Remaining time of the event" :value="deadline" format="HH:mm:ss:SSS" />
             </a-col>
             <a-col :md="6" :sm="12" :xs="24">
-              <a-statistic title="每秒交易总额" suffix="元" :value="convertNumber(234)" />
+              <a-statistic title="Total transaction amount per second" suffix="yuan" :value="convertNumber(234)" />
             </a-col>
           </a-row>
           <div class="mapChart">
@@ -645,11 +645,11 @@ onMounted(() => {
         </a-card>
       </a-col>
       <a-col :xl="6" :lg="24" :md="24" :sm="24" :xs="24">
-        <a-card title="活动情况预测" :style="{ marginBottom: '24px' }" :bordered="false">
+        <a-card title="Event status forecast" :style="{ marginBottom: '24px' }" :bordered="false">
           <ActiveChart />
         </a-card>
         <a-card
-          title="券核效率"
+          title="Coupon verification efficiency"
           :style="{ marginBottom: 24 }"
           :body-style="{ textAlign: 'center' }"
           :bordered="false"
@@ -660,7 +660,7 @@ onMounted(() => {
     </a-row>
     <a-row :gutter="24">
       <a-col :xl="12" :lg="24" :sm="24" :xs="24" :style="{ marginBottom: '24px' }">
-        <a-card title="各品类占比" :bordered="false" class="pieCard">
+        <a-card title="Proportion of each category" :bordered="false" class="pieCard">
           <a-row :style="{ padding: '16px 0' }">
             <a-col :span="8">
               <div ref="ringContainer1" />
@@ -676,7 +676,7 @@ onMounted(() => {
       </a-col>
       <a-col :xl="6" :lg="12" :sm="24" :xs="24" :style="{ marginBottom: 24 }">
         <a-card
-          title="热门搜索"
+          title="Popular searches"
           :bordered="false"
           :body-style="{ overflow: 'hidden' }"
         >
@@ -685,7 +685,7 @@ onMounted(() => {
       </a-col>
       <a-col :xl="6" :lg="12" :sm="24" :xs="24" :style="{ marginBottom: 24 }">
         <a-card
-          title="资源剩余"
+          title="Remaining resources"
           :body-style="{ textAlign: 'center', fontSize: 0 }"
           :bordered="false"
         >

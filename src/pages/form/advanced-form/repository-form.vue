@@ -98,7 +98,7 @@ defineExpose({
         <a-form-item
           name="dateRange"
           :rules="[{ required: true, message: '请选择生效日期' }]"
-          label="生效日期"
+          label="Effective date"
         >
           <a-time-picker
             v-model:value="formState.dateRange"
@@ -116,8 +116,8 @@ defineExpose({
             v-model:value="formState.type"
             placeholder="请选择仓库类型"
           >
-            <a-select-option value="公开">
-              公开
+            <a-select-option value="Public">
+              Public
             </a-select-option>
             <a-select-option value="私密">
               私密

@@ -77,7 +77,7 @@ function prevStep() {
       </a-form-item>
       <a-form-item :wrapper-col="{ span: 19, offset: 5 }">
         <a-button type="primary" @click="nextStep">
-          提交
+          Submit
         </a-button>
         <a-button style="margin-left: 8px" @click="prevStep">
           上一步

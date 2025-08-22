@@ -10,7 +10,7 @@ type LoadingType = {
   modal?: boolean;
 };
 /**
- * 全局loading配置
+ * GloballoadingConfiguration
  * @param config
  */
 export function useLoading(config: LoadingType = {}) {

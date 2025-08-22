@@ -3,27 +3,27 @@ import type { STATUS } from "~@/utils/constant";
 type ConsultTableModel = {
   id: number;
   /**
-   * 服务名称
+   * Service name
    */
   name: string;
   /**
-   * 服务调用次数
+   * Service call count
    */
   callNo: 805;
   /**
-   * 描述
+   * Description
    */
   desc: string;
   /**
-   * 状态
+   * Status
    */
   status: STATUS;
   /**
-   * 上次调用时间
+   * Last call time
    */
   updatedAt: string;
 
-  // 分页
+  // Pagination
   current?: number;
   // size
   pageSize?: number;

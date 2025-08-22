@@ -3,15 +3,15 @@ import { PlusOutlined } from "@ant-design/icons-vue";
 
 const links = [
   {
-    title: "操作一",
+    title: "Operation one",
     href: "",
   },
   {
-    title: "操作二",
+    title: "Operation two",
     href: "",
   },
   {
-    title: "操作三",
+    title: "Operation three",
     href: "",
   },
   {

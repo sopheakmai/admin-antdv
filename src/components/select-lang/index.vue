@@ -18,7 +18,7 @@ function handleClick({ key }: any) {
               🇨🇳
             </span>
           </template>
-          简体中文
+          Simplified Chinese
         </a-menu-item>
         <a-menu-item key="en-US">
           <template #icon>

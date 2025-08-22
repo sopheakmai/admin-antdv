@@ -7,45 +7,45 @@ export type MenuData = MenuDataItem[];
 export type Key = string | number;
 
 export type MenuDataItem = {
-  // 唯一id
+  // Uniqueid
   id?: string | number;
-  // 标题
+  // Title
   title: string | (() => VNodeChild);
-  // 图标
+  // Icon
   icon?: string | (() => VNodeChild);
-  // 地址
+  // Address
   path: string;
-  // 绑定的哪个组件
+  // Which component is bound
   component?: string;
-  // 子集菜单
+  // Subset menu
   children?: MenuDataItem[];
-  // 重定向地址
+  // Redirect address
   redirect?: string;
-  // 哪些是固定页签
+  // Which are fixed tabs
   affix?: boolean;
-  // 父级菜单的id
+  // Parent menu'sid
   parentId?: string | number | null;
-  // 同路由中的name，主要是用于保活的左右
+  // In the same routename，Mainly used for keeping alive
   name?: string;
-  // 是否隐藏当前菜单
+  // Hide current menu
   hideInMenu?: boolean;
-  // 如果使用了隐藏，那么点击当前菜单的时候，可以使用父级的key
+  // If hidden is used，then when clicking the current menu，you can use the parent'skey
   parentKeys?: string[];
-  // 是否套用iframe
+  // Applyiframe
   isIframe?: boolean;
-  // 如果当前是iframe的模式，需要有一个跳转的url支撑，其不能和path重复，path还是为路由
+  // If the current isiframemode，there needs to be a jumpurlsupport，It cannot be the same aspathrepeated，pathor for the route
   url?: string;
-  // 是否存在面包屑
+  // Does breadcrumb exist
   hideInBreadcrumb?: boolean;
-  // 是否需要显示所有的子菜单
+  // Do you need to display all submenus
   hideChildrenInMenu?: boolean;
-  // 是否保活
+  // Keep alive
   keepAlive?: boolean;
-  // 这里包含所有的父级元素
+  // This contains all parent elements
   matched?: MenuDataItem[];
-  // 全连接跳转模式
+  // Full link jump mode
   target?: "_blank" | "_self" | "_parent";
-  // 多语言配置
+  // Multilingual configuration
   locale?: string;
 };
 
@@ -88,9 +88,9 @@ export const proLayoutProps = {
   footer: booleanType<boolean>(true),
   menu: booleanType<boolean>(true),
   menuHeader: booleanType<boolean>(true),
-  // 展开菜单
+  // Expand menu
   openKeys: arrayType<string[]>(),
-  // 选中菜单
+  // Selected menu
   selectedKeys: arrayType<string[]>(),
   copyright: stringType(),
   ...proLayoutEvents,

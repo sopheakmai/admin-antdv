@@ -51,13 +51,13 @@ const isCurrentDisabled = computed(() => {
 });
 
 function leftDisabled(key: string) {
-  // 判断左侧是否还有可关闭的
+  // Check if there are still tabs to close on the left
   const index = list.value.findIndex(v => v.fullPath === key);
   return index === 0 || list.value.filter(v => !v.affix).length <= 1;
 }
 
 function rightDisabled(key: string) {
-  // 判断右侧是否还有可关闭的
+  // Check if there are still tabs to close on the right
   const index = list.value.findIndex(v => v.fullPath === key);
   return (
     index === list.value.length - 1
@@ -124,32 +124,32 @@ onUnmounted(() => {
                 key="closeCurrent"
                 :disabled="isCurrentDisabled || activeKey !== item.fullPath"
               >
-                <!-- 关闭当前 -->
+                <!-- Close current -->
                 {{ $t("app.multiTab.closeCurrent") }}
               </a-menu-item>
               <a-menu-item
                 key="closeLeft"
                 :disabled="isCurrentDisabled || leftDisabled(item.fullPath)"
               >
-                <!-- 关闭左侧 -->
+                <!-- Close left -->
                 {{ $t("app.multiTab.closeLeft") }}
               </a-menu-item>
               <a-menu-item
                 key="closeRight"
                 :disabled="isCurrentDisabled || rightDisabled(item.fullPath)"
               >
-                <!-- 关闭右侧 -->
+                <!-- Close right -->
                 {{ $t("app.multiTab.closeRight") }}
               </a-menu-item>
               <a-menu-item
                 key="closeOther"
                 :disabled="isCurrentDisabled || otherDisabled"
               >
-                <!-- 关闭其他 -->
+                <!-- Close others -->
                 {{ $t("app.multiTab.closeOther") }}
               </a-menu-item>
               <a-menu-item key="refresh" :disabled="!isCurrentDisabled">
-                <!-- 刷新当前 -->
+                <!-- Refresh current -->
                 {{ $t("app.multiTab.refresh") }}
               </a-menu-item>
             </a-menu>
@@ -170,11 +170,11 @@ onUnmounted(() => {
                 key="closeOther"
                 :disabled="isCurrentDisabled || otherDisabled"
               >
-                <!-- 关闭其他 -->
+                <!-- Close others -->
                 {{ $t("app.multiTab.closeOther") }}
               </a-menu-item>
               <a-menu-item key="refresh">
-                <!-- 刷新当前 -->
+                <!-- Refresh current -->
                 {{ $t("app.multiTab.refresh") }}
               </a-menu-item>
             </a-menu>

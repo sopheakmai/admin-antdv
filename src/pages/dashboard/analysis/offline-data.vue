@@ -60,202 +60,202 @@ const offlineData = [
 const offlineChartData = [
   {
     date: "03:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 36,
   },
   {
     date: "03:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 53,
   },
   {
     date: "03:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 98,
   },
   {
     date: "03:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 31,
   },
   {
     date: "04:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 62,
   },
   {
     date: "04:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 109,
   },
   {
     date: "04:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 76,
   },
   {
     date: "04:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 11,
   },
   {
     date: "05:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 39,
   },
   {
     date: "05:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 56,
   },
   {
     date: "05:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 52,
   },
   {
     date: "05:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 98,
   },
   {
     date: "06:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 29,
   },
   {
     date: "06:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 101,
   },
   {
     date: "06:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 10,
   },
   {
     date: "06:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 13,
   },
   {
     date: "07:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 29,
   },
   {
     date: "07:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 62,
   },
   {
     date: "07:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 70,
   },
   {
     date: "07:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 20,
   },
   {
     date: "08:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 21,
   },
   {
     date: "08:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 41,
   },
   {
     date: "08:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 86,
   },
   {
     date: "08:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 104,
   },
   {
     date: "09:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 91,
   },
   {
     date: "09:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 76,
   },
   {
     date: "09:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 31,
   },
   {
     date: "09:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 72,
   },
   {
     date: "10:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 14,
   },
   {
     date: "10:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 37,
   },
   {
     date: "10:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 45,
   },
   {
     date: "10:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 106,
   },
   {
     date: "11:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 31,
   },
   {
     date: "11:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 69,
   },
   {
     date: "11:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 99,
   },
   {
     date: "11:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 103,
   },
   {
     date: "12:26",
-    type: "客流量",
+    type: "Customer traffic",
     value: 49,
   },
   {
     date: "12:26",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 33,
   },
   {
     date: "12:56",
-    type: "客流量",
+    type: "Customer traffic",
     value: 86,
   },
   {
     date: "12:56",
-    type: "支付笔数",
+    type: "Number of payments",
     value: 23,
   },
 ];
@@ -274,7 +274,7 @@ const offlineChartData = [
                 :total="`${item.cvr * 100}%`"
               >
                 <template #subTitle>
-                  {{ '转化率' }}
+                  {{ 'Conversion rate' }}
                 </template>
               </NumberInfo>
             </a-col>

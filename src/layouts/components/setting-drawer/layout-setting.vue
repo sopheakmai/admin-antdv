@@ -18,49 +18,49 @@ const props = defineProps<{
 const emit = defineEmits(["changeSetting"]);
 const list = computed(() => [
   {
-    title: "内容区域宽度",
+    title: "Content area width",
     key: "contentWidth",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "固定 Header",
+    title: "Fixed Header",
     key: "fixedHeader",
     disabled: props.layout === "mix",
     disabledReason: "",
   },
   {
-    title: "固定侧边菜单",
+    title: "Fixed side menu",
     key: "fixSiderbar",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "自动分割菜单",
+    title: "Automatically split menu",
     key: "splitMenus",
     disabled: props.layout !== "mix",
     disabledReason: "",
   },
   {
-    title: "缓存功能",
+    title: "Caching function",
     key: "keepAlive",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "菜单手风琴模式",
+    title: "Menu accordion mode",
     key: "accordionMode",
     disabled: false,
     disabledReason: "",
   },
   {
-    title: "侧边菜单折叠 左侧",
+    title: "Side menu collapse Left side",
     key: "leftCollapsed",
     disabled: props.layout !== "side",
     disabledReason: "",
   },
   {
-    title: "紧凑模式",
+    title: "Compact mode",
     key: "compactAlgorithm",
     disabled: false,
     disabledReason: "",

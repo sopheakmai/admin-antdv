@@ -8,7 +8,7 @@ function back() {
 </script>
 
 <template>
-  <a-result status="403" title="403" sub-title="Sorry, you don't have access to this page.">
+  <a-result status="403" title="403" sub-title="Sorry, you donot have access to this page.">
     <template #extra>
       <a-button type="primary" @click="back">
         Back to home
@@ -63,7 +63,7 @@ const startTimeLoading = () => {
       <div
         v-loading="loading"
         class="relative w-full h-[150px]"
-        loading-text="自定义指令loading"
+        loading-text="Custom directiveloading"
         loading-spin="pulse"
         :loading-full="full"
       >

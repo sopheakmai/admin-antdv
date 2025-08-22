@@ -3,6 +3,6 @@
 
 <template>
   <div>
-    管理员拥有访问权限
+    Administrator has access permissions
   </div>
 </template>

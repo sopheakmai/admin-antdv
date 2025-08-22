@@ -43,13 +43,13 @@ const { t } = useI18n();
       <a-col :span="8">
         <div>
           <p>
-            {{ t('profile.advanced.create-product') }}: XX服务
+            {{ t('profile.advanced.create-product') }}: XXService
           </p>
           <p>
             {{ t('profile.advanced.create-id') }}: 12345
           </p>
           <p>
-            {{ t('profile.advanced.create-info') }}: 请于两个工作日内确认
+            {{ t('profile.advanced.create-info') }}: Please confirm within two business days
           </p>
         </div>
       </a-col>

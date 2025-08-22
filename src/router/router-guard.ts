@@ -12,7 +12,7 @@ router.beforeEach(async (to, _, next) => {
   const userStore = useUserStore();
   const token = useAuthorization();
   if (!token.value) {
-    // If token doesn't exist, redirect to login page
+    // If token doesnot exist, redirect to login page
     if (!allowList.includes(to.path) && !to.path.startsWith("/redirect")) {
       next({
         path: loginPath,

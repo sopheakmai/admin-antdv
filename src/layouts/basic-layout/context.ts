@@ -23,7 +23,7 @@ function layoutStateFunc(props: ProLayoutProps, methods: ProLayoutProviderMethod
   const contentWidth = computed(() => props.contentWidth);
   const copyright = computed(() => props.copyright);
   /**
-   * 移动端的处理方式
+   * Mobile processing method
    */
   const isMobile = computed(() => props.isMobile);
   const mobileCollapsed = shallowRef(false);
@@ -70,7 +70,7 @@ function layoutStateFunc(props: ProLayoutProps, methods: ProLayoutProviderMethod
     // runEvent(props['onUpdate:openKeys'], val)
   };
   /**
-   * 菜单选中处理
+   * Menu selection handling
    */
   const openKeys = computed(() => props.openKeys);
   const selectedKeys = computed(() => props.selectedKeys);

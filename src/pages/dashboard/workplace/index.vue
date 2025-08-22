@@ -71,7 +71,7 @@ const projectNotice = [
     id: "xxx6",
     title: "React",
     logo: "https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png",
-    description: "生命就像一盒巧克力，结果往往出人意料",
+    description: "Life is like a box of chocolates，The results are often unexpected",
     updatedAt: "6 年前",
     member: "骗你来学计算机",
     href: "",
@@ -214,27 +214,27 @@ const radarData = [
     value: 7,
   },
   {
-    name: "团队",
+    name: "Team",
     label: "引用",
     value: 3,
   },
   {
-    name: "团队",
+    name: "Team",
     label: "口碑",
     value: 9,
   },
   {
-    name: "团队",
+    name: "Team",
     label: "产量",
     value: 6,
   },
   {
-    name: "团队",
+    name: "Team",
     label: "贡献",
     value: 3,
   },
   {
-    name: "团队",
+    name: "Team",
     label: "热度",
     value: 1,
   },
@@ -421,7 +421,7 @@ onBeforeUnmount(() => {
         <a-card
           :body-style="{ paddingTop: '12px', paddingBottom: '12px' }"
           :bordered="false"
-          title="团队"
+          title="Team"
         >
           <div class="members">
             <a-row :gutter="48">

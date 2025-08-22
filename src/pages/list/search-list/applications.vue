@@ -91,7 +91,7 @@ const list = [
     href: "https://ant.design",
     updatedAt: 1693298981539,
     createdAt: 1693298981539,
-    subDescription: "生命就像一盒巧克力，结果往往出人意料",
+    subDescription: "Life is like a box of chocolates，The results are often unexpected",
     description: "在中台产品的研发过程中，会出现不同的设计规范和实现方式，但其中往往存在很多类似的页面和组件，这些类似的组件会被抽离成一套标准规范。",
     activeUser: 170883,
     newUser: 1151,
@@ -281,7 +281,7 @@ const list = [
     href: "https://ant.design",
     updatedAt: 1693262981539,
     createdAt: 1693262981539,
-    subDescription: "生命就像一盒巧克力，结果往往出人意料",
+    subDescription: "Life is like a box of chocolates，The results are often unexpected",
     description: "在中台产品的研发过程中，会出现不同的设计规范和实现方式，但其中往往存在很多类似的页面和组件，这些类似的组件会被抽离成一套标准规范。",
     activeUser: 100882,
     newUser: 1372,
@@ -324,13 +324,13 @@ const list = [
               <template #description>
                 <div class="flex">
                   <div class="w-50% flex flex-col">
-                    <span>活跃用户</span>
+                    <span>Active users</span>
                     <span class="text-28px c-text">
                       11 <span class="text-16px">万</span>
                     </span>
                   </div>
                   <div class="w-50% flex flex-col">
-                    <span>新增用户</span>
+                    <span>New users</span>
                     <span class="text-28px c-text">1,294</span>
                   </div>
                 </div>

@@ -81,7 +81,7 @@ type FormState = {
 const formState = reactive<FormState>({
   title: "",
   start: "",
-  owner: "清风不问烟雨",
+  owner: "The gentle breeze does not ask about the misty rain",
   description: "",
   index: 0,
 });
@@ -164,7 +164,7 @@ function handleOk() {
 function cancelModal() {
   console.log("cancel");
   formState.description = "";
-  formState.owner = "清风不问烟雨";
+  formState.owner = "The gentle breeze does not ask about the misty rain";
   formState.start = "";
   formState.title = "";
 }
@@ -217,7 +217,7 @@ onMounted(() => {
               <div class="ml-5">
                 <a-input-search
                   v-model:value="searchValue"
-                  placeholder="请输入"
+                  placeholder="Please enter"
                   style="width: 270px"
                   @search="onSearch"
                 />
@@ -244,10 +244,10 @@ onMounted(() => {
               <div class="flex text-gray-400">
                 <div class="flex flex-col items-center">
                   <div>Owner</div>
-                  <div>清风不问烟雨</div>
+                  <div>The gentle breeze does not ask about the misty rain</div>
                 </div>
                 <div class="px-10">
-                  <div>开始时间</div>
+                  <div>Start time</div>
                   <div>{{ item.start }}</div>
                 </div>
                 <div class="w-45 flex items-center">
@@ -270,7 +270,7 @@ onMounted(() => {
                         <a @click="openModal">编辑</a>
                       </a-menu-item>
                       <a-menu-item>
-                        <a @click="showConfirm(item.index)">删除</a>
+                        <a @click="showConfirm(item.index)">Delete</a>
                       </a-menu-item>
                     </a-menu>
                   </template>
@@ -304,7 +304,7 @@ onMounted(() => {
           <a-input v-model:value="formState.title" />
         </a-form-item>
         <a-form-item
-          label="开始时间"
+          label="Start time"
           name="start"
           :rules="[{ required: true, message: '请选择开始时间' }]"
         >
@@ -317,7 +317,7 @@ onMounted(() => {
         >
           <a-select v-model:value="formState.owner" placeholder="please select your zone">
             <a-select-option value="owner">
-              清风不问烟雨
+              The gentle breeze does not ask about the misty rain
             </a-select-option>
           </a-select>
         </a-form-item>

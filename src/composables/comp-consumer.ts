@@ -17,7 +17,7 @@ export function useCompConsumer() {
     if (compMap.has(routeName))
       return compMap.get(routeName) as VNode;
 
-    // If it doesn't exist, need to organize it
+    // If it doesnot exist, need to organize it
     const node = component;
     if (compName && compName === routeName) {
       compMap.set(routeName, node);

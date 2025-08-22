@@ -32,7 +32,7 @@ export const useMultiTab = defineStore("multi-tab", () => {
       return;
     if (allowList.includes(route.path))
       return;
-    // 设置当前的loading为false
+    // 设置当前的loadingisfalse
     if (refreshItem.value) {
       // 增加一个取消的延迟
       setTimeout(() => {

@@ -66,14 +66,14 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="activeChart">
-    <a-statistic title="目标评估" value="有望达到预期" />
+    <a-statistic title="Goal assessment" value="Expected to reach the target" />
     <div :style="{ marginTop: '32px' }">
       <div ref="tinyAreaContainer" />
     </div>
     <div>
       <div class="activeChartGrid">
-        <p>{{ [...activeData].sort()[activeData.length - 1]?.y + 200 }} 亿元</p>
-        <p>{{ [...activeData].sort()[Math.floor(activeData.length / 2)]?.y }} 亿元</p>
+        <p>{{ [...activeData].sort()[activeData.length - 1]?.y + 200 }} 100 million yuan</p>
+        <p>{{ [...activeData].sort()[Math.floor(activeData.length / 2)]?.y }} 100 million yuan</p>
       </div>
       <div class="dashedLine">
         <div class="line" />

@@ -81,9 +81,9 @@ onBeforeUnmount(() => {
 <template>
   <a-row :gutter="24">
     <a-col v-bind="{ ...topColResponsiveProps }">
-      <ChartCard :bordered="false" title="总销售额" :loading="loading" :content-height="46">
+      <ChartCard :bordered="false" title="Total sales" :loading="loading" :content-height="46">
         <template #action>
-          <a-tooltip title="指标说明">
+          <a-tooltip title="Metric description">
             <InfoCircleOutlined />
           </a-tooltip>
         </template>
@@ -91,23 +91,23 @@ onBeforeUnmount(() => {
           <span>{{ `¥${convertNumber(126560)}` }}</span>
         </template>
         <template #footer>
-          <Field label="日销售额" value="￥12,423" />
+          <Field label="Daily sales" value="￥12,423" />
         </template>
         <Trend flag="up" :style="{ marginRight: '16px' } ">
-          周同比
+          Week-on-week
           <span class="trendText">12%</span>
         </Trend>
         <Trend flag="down">
-          日同比
+          Day-on-day
           <span class="trendText">11%</span>
         </Trend>
       </ChartCard>
     </a-col>
 
     <a-col v-bind="{ ...topColResponsiveProps }">
-      <ChartCard :bordered="false" title="访问量" :loading="loading" :content-height="46">
+      <ChartCard :bordered="false" title="Views" :loading="loading" :content-height="46">
         <template #action>
-          <a-tooltip title="指标说明">
+          <a-tooltip title="Metric description">
             <InfoCircleOutlined />
           </a-tooltip>
         </template>
@@ -115,16 +115,16 @@ onBeforeUnmount(() => {
           <span>{{ `${convertNumber(8846)}` }}</span>
         </template>
         <template #footer>
-          <Field label="日访问量" :value="convertNumber(1234)" />
+          <Field label="Daily views" :value="convertNumber(1234)" />
         </template>
         <div ref="tinyAreaContainer" />
       </ChartCard>
     </a-col>
 
     <a-col v-bind="{ ...topColResponsiveProps }">
-      <ChartCard :bordered="false" title="支付笔数" :loading="loading" :content-height="46">
+      <ChartCard :bordered="false" title="Number of payments" :loading="loading" :content-height="46">
         <template #action>
-          <a-tooltip title="指标说明">
+          <a-tooltip title="Metric description">
             <InfoCircleOutlined />
           </a-tooltip>
         </template>
@@ -132,16 +132,16 @@ onBeforeUnmount(() => {
           <span>{{ `${convertNumber(6560)}` }}</span>
         </template>
         <template #footer>
-          <Field label="转化率" value="60%" />
+          <Field label="Conversion rate" value="60%" />
         </template>
         <div ref="tinyColumnContainer" />
       </ChartCard>
     </a-col>
 
     <a-col v-bind="{ ...topColResponsiveProps }">
-      <ChartCard :bordered="false" title="运营活动效果" :loading="loading" :content-height="46">
+      <ChartCard :bordered="false" title="Effect of operational activities" :loading="loading" :content-height="46">
         <template #action>
-          <a-tooltip title="指标说明">
+          <a-tooltip title="Metric description">
             <InfoCircleOutlined />
           </a-tooltip>
         </template>
@@ -151,11 +151,11 @@ onBeforeUnmount(() => {
         <template #footer>
           <div :style="{ whiteSpace: 'nowrap', overflow: 'hidden' }">
             <Trend flag="up" :style="{ marginRight: '16px' } ">
-              周同比
+              Week-on-week
               <span class="trendText">12%</span>
             </Trend>
             <Trend flag="down">
-              日同比
+              Day-on-day
               <span class="trendText">11%</span>
             </Trend>
           </div>

@@ -35,7 +35,7 @@ function finish() {
       <a-steps class="steps" :current="state.currentTab">
         <a-step title="填写转账信息" />
         <a-step title="确认转账信息" />
-        <a-step title="完成" />
+        <a-step title="Complete" />
       </a-steps>
       <div class="content">
         <Step1 v-if="state.currentTab === 0" @next-step="nextStep" />

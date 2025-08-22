@@ -45,7 +45,7 @@ async function getCode() {
       reset();
       resume();
       codeLoading.value = false;
-      message.success("验证码是：123456");
+      message.success("The verification code is：123456");
     }, 3000);
   }
   catch (error) {
@@ -75,11 +75,11 @@ async function submit() {
     const { data } = await loginApi(params);
     token.value = data?.token;
     notification.success({
-      message: "登录成功",
-      description: "欢迎回来！",
+      message: "Login successful",
+      description: "Welcome back！",
       duration: 3,
     });
-    // 获取当前是否存在重定向的链接，如果存在就走重定向的地址
+    // Get whether there is a redirect link，If it exists, use the redirect address
     const redirect = getQueryParam("redirect", "/");
     router.push({
       path: redirect,
@@ -99,7 +99,7 @@ async function submit() {
   <div class="login-container">
     <div class="login-lang" flex="~" items-center justify-end gap-2 px-24px>
       <span flex cursor-pointer items-center justify-center text-16px @click="appStore.toggleTheme(layoutSetting.theme === 'dark' ? 'light' : 'dark')">
-        <!-- 亮色和暗黑模式切换按钮 -->
+        <!-- Light and dark mode toggle button -->
         <template v-if="layoutSetting.theme === 'light'">
           <carbon-moon />
         </template>
@@ -130,7 +130,7 @@ async function submit() {
               <a-tab-pane key="account" :tab="t('pages.login.accountLogin.tab')" />
               <a-tab-pane key="mobile" :tab="t('pages.login.phoneLogin.tab')" />
             </a-tabs>
-            <!-- 判断是否存在error -->
+            <!-- Check if it existserror -->
             <a-alert v-if="errorAlert && loginModel.type === 'account'" :message="t('pages.login.accountLogin.errorMessage')" type="error" show-icon mb-24px />
             <a-alert v-if="errorAlert && loginModel.type === 'mobile'" :message="t('pages.login.phoneLogin.errorMessage')" type="error" show-icon mb-24px />
             <template v-if="loginModel.type === 'account'">

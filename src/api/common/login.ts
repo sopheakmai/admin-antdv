@@ -16,11 +16,11 @@ export type LoginResultModel = {
 
 export function loginApi(params: LoginParams | LoginMobileParams) {
   return usePost<LoginResultModel, LoginParams | LoginMobileParams>("/login", params, {
-    // 设置为false的时候不会携带token
+    // Set asfalseWill not be carried whentoken
     token: false,
-    // 开发模式下使用自定义的接口
+    // Use custom interface in development mode
     customDev: true,
-    // 是否开启全局请求loading
+    // Enable global requestloading
     loading: true,
   });
 }

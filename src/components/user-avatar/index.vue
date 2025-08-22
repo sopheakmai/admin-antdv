@@ -9,13 +9,13 @@ const router = useRouter();
 const { avatar, nickname } = storeToRefs(userStore);
 async function handleClick({ key }: any) {
   if (key === "logout") {
-    const hide = message.loading("退出登录...", 0);
+    const hide = message.loading("Log out...", 0);
     try {
       await userStore.logout();
     }
     finally {
       hide();
-      message.success("退出登录成功", 3);
+      message.success("Successfully logged out", 3);
       router.push({
         path: "/login",
       }).then(() => {
@@ -40,7 +40,7 @@ async function handleClick({ key }: any) {
             <UserOutlined />
           </template>
           <RouterLink to="/account/center">
-            个人中心
+            Personal center
           </RouterLink>
         </a-menu-item>
         <a-menu-item key="1">
@@ -48,7 +48,7 @@ async function handleClick({ key }: any) {
             <ProfileOutlined />
           </template>
           <RouterLink to="/account/settings">
-            个人设置
+            Personal settings
           </RouterLink>
         </a-menu-item>
         <a-menu-divider />
@@ -56,7 +56,7 @@ async function handleClick({ key }: any) {
           <template #icon>
             <LogoutOutlined />
           </template>
-          退出登录
+          Log out
         </a-menu-item>
       </a-menu>
     </template>

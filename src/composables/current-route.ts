@@ -7,7 +7,7 @@ export function useCurrentRoute() {
   const pathsKeys = menuDataMap.value?.keys();
   const currentPath = currentRoute.value.path;
   // router.
-  // 通过校验判断是否在menuItem中
+  // Validate to check if it is inmenuItemthe middle of
   console.log("currentPath", currentPath, pathsKeys);
   return {
     currentRoute,

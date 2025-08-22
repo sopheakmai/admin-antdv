@@ -13,7 +13,7 @@ defineProps({
 const rankingListData: { title: string; total: number }[] = [];
 for (let i = 0; i < 7; i += 1) {
   rankingListData.push({
-    title: `工专路 ${i} 号店`,
+    title: `Gongzhuan Road ${i} No. store`,
     total: 323234,
   });
 }
@@ -44,7 +44,7 @@ function getDateRange(type: string) {
       rangePickerValue.value = [dayjs(startDate), dayjs(endDate)];
       break;
     default:
-      // 返回默认值或抛出错误，视情况而定
+      // Return default value or throw error，Depends on the situation
       return null;
   }
 }
@@ -63,51 +63,51 @@ function convertNumber(number: number) {
 
 const salesData = [
   {
-    x: "1月",
+    x: "1Month",
     y: 809,
   },
   {
-    x: "2月",
+    x: "2Month",
     y: 766,
   },
   {
-    x: "3月",
+    x: "3Month",
     y: 585,
   },
   {
-    x: "4月",
+    x: "4Month",
     y: 763,
   },
   {
-    x: "5月",
+    x: "5Month",
     y: 853,
   },
   {
-    x: "6月",
+    x: "6Month",
     y: 898,
   },
   {
-    x: "7月",
+    x: "7Month",
     y: 1096,
   },
   {
-    x: "8月",
+    x: "8Month",
     y: 452,
   },
   {
-    x: "9月",
+    x: "9Month",
     y: 244,
   },
   {
-    x: "10月",
+    x: "10Month",
     y: 838,
   },
   {
-    x: "11月",
+    x: "11Month",
     y: 673,
   },
   {
-    x: "12月",
+    x: "12Month",
     y: 431,
   },
 ];
@@ -133,7 +133,7 @@ function changTab(activeKey: Key) {
         },
         meta: {
           y: {
-            alias: "销售量",
+            alias: "Sales volume",
           },
         },
       }).render();
@@ -157,7 +157,7 @@ onMounted(() => {
     },
     meta: {
       y: {
-        alias: "销售量",
+        alias: "Sales volume",
       },
     },
   });
@@ -181,10 +181,10 @@ onBeforeUnmount(() => {
         <template #rightExtra>
           <div class="salesExtraWrap">
             <div class="salesExtra">
-              <a key="day" class="currentDate" @click="onClick">今日</a>
-              <a key="week" @click="onClick">本周</a>
-              <a key="month" @click="onClick">本月</a>
-              <a key="year" @click="onClick">本年</a>
+              <a key="day" class="currentDate" @click="onClick">Today</a>
+              <a key="week" @click="onClick">This week</a>
+              <a key="month" @click="onClick">This month</a>
+              <a key="year" @click="onClick">This year</a>
             </div>
             <a-range-picker
               :value="rangePickerValue"
@@ -192,7 +192,7 @@ onBeforeUnmount(() => {
             />
           </div>
         </template>
-        <a-tab-pane key="sales" tab="销售额">
+        <a-tab-pane key="sales" tab="Sales amount">
           <a-row>
             <a-col :xl="16" :lg="12" :md="12" :sm="24" :xs="24">
               <div class="salesBar">
@@ -202,7 +202,7 @@ onBeforeUnmount(() => {
             <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
               <div class="salesRank">
                 <h4 class="rankingTitle">
-                  门店销售额排名
+                  Store sales ranking
                 </h4>
                 <ul class="rankingList">
                   <li v-for="(item, index) in rankingListData" :key="index">
@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
             </a-col>
           </a-row>
         </a-tab-pane>
-        <a-tab-pane key="views" tab="访问量">
+        <a-tab-pane key="views" tab="Views">
           <a-row>
             <a-col :xl="16" :lg="12" :md="12" :sm="24" :xs="24">
               <div class="salesBar">
@@ -233,7 +233,7 @@ onBeforeUnmount(() => {
             <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
               <div class="salesRank">
                 <h4 class="rankingTitle">
-                  门店访问量排名
+                  Store views ranking
                 </h4>
                 <ul class="rankingList">
                   <li v-for="(item, index) in rankingListData" :key="index">

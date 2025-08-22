@@ -1,6 +1,6 @@
 <script setup lang="ts">
 type Prop = {
-  // 列表每一项的高度
+  // Height of each list item
   dataSource: any[];
   itemHeight?: number;
 };
@@ -15,17 +15,17 @@ const transformStyle = computed<string>(() => {
 });
 
 const scrollerContainerRef = ref<HTMLDivElement>();
-// 容器高度
+// Container height
 const scrollerContainerRefHeight = computed(() => {
   return scrollerContainerRef.value ? scrollerContainerRef.value.offsetHeight : 0;
 });
 
-// 渲染视口的item数量
+// Render viewport'sitemquantity
 const itemCount = computed<number>(() => {
   return Math.ceil(scrollerContainerRefHeight.value / props.itemHeight) + 1;
 });
 
-// 最顶端和低端元素在数组中的索引
+// Index of the topmost and bottommost elements in the array
 const start = ref<number>(0);
 const end = computed<number>(() => {
   return start.value + itemCount.value;
@@ -33,7 +33,7 @@ const end = computed<number>(() => {
 
 const Data = ref<any[]>();
 
-// 用来撑开容器高度
+// Used to expand the container height
 const pillarHeight = computed(() => {
   if (Data.value?.length)
     return props.itemHeight * Data.value?.length;
@@ -113,7 +113,7 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     overflow: auto;
-    // 处理ios滚动卡顿
+    // ProcessiosScroll lag
     --webkit-overflow-scrolling: touch;
 
     .pillar {

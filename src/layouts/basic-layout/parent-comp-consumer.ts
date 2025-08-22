@@ -11,17 +11,17 @@ export const ParentCompConsumer = defineComponent({
       const parentComps = route.meta?.parentComps;
 
       if (parentName) {
-        // 获取组件的信息
+        // Get component information
         if (parentMap.has(parentName)) {
           return parentMap.get(parentName);
         }
         else {
-          // 不存在判断是否存在parentComps
+          // Does not exist to judge if it existsparentComps
           if (parentComps?.length) {
-            // 获取组件的信息
+            // Get component information
             let comp: any;
             for (const parentComp of [...parentComps].reverse()) {
-              // 有内到外
+              // From inside to outside
               const comp1: any = isFunction(parentComp) ? defineAsyncComponent(parentComp as any) : parentComp;
               if (comp) {
                 comp = h(comp1, null, {

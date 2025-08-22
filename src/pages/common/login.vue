@@ -47,7 +47,7 @@ async function getCode() {
       reset();
       resume();
       codeLoading.value = false;
-      message.success("验证码是：123456");
+      message.success("The verification code is：123456");
     }, 3000);
   }
   catch (error) {
@@ -77,11 +77,11 @@ async function submit() {
     const { data } = await loginApi(params);
     token.value = data?.token;
     notification.success({
-      message: "登录成功",
-      description: "欢迎回来！",
+      message: "Login successful",
+      description: "Welcome back！",
       duration: 3,
     });
-    // 获取当前是否存在重定向的链接，如果存在就走重定向的地址
+    // Get whether there is a redirect link，If it exists, use the redirect address
     const redirect = getQueryParam("redirect", "/");
     router.push({
       path: redirect,
@@ -112,7 +112,7 @@ onBeforeUnmount(() => {
     </div>
     <div class="login-content flex-center">
       <div class="ant-pro-form-login-main rounded">
-        <!-- 登录头部 -->
+        <!-- Login header -->
         <div
           class="flex-between mb-[2px] h-15 px-4"
         >
@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
               class="flex-center cursor-pointer text-16px"
               @click="appStore.toggleTheme(layoutSetting.theme === 'dark' ? 'light' : 'dark')"
             >
-              <!-- 亮色和暗黑模式切换按钮 -->
+              <!-- Light and dark mode toggle button -->
               <template v-if="layoutSetting.theme === 'light'">
                 <carbon-moon />
               </template>
@@ -144,14 +144,14 @@ onBeforeUnmount(() => {
           </div>
         </div>
         <a-divider m-0 />
-        <!-- 登录主体 -->
+        <!-- Login body -->
         <div class="box-border min-h-[520px] flex">
-          <!-- 登录框左侧 -->
+          <!-- Login box left side -->
           <div class="ant-pro-form-login-main-left min-h-[520px] flex-center bg-[var(--bg-color-container)]">
             <img src="@/assets/images/login-left.png" class="h-5/6 w-5/6">
           </div>
           <a-divider m-0 type="vertical" class="ant-pro-login-divider min-h-[520px]" />
-          <!-- 登录框右侧 -->
+          <!-- Login box right side -->
           <div class="ant-pro-form-login-main-right relative z-11 w-[335px] flex-center flex-col px-5">
             <div class="py-6 text-center text-2xl">
               {{ t('pages.login.tips') }}
@@ -161,7 +161,7 @@ onBeforeUnmount(() => {
                 <a-tab-pane key="account" :tab="t('pages.login.accountLogin.tab')" />
                 <a-tab-pane key="mobile" :tab="t('pages.login.phoneLogin.tab')" />
               </a-tabs>
-              <!-- 判断是否存在error -->
+              <!-- Check if it existserror -->
               <a-alert
                 v-if="errorAlert && loginModel.type === 'account'"
                 :message="t('pages.login.accountLogin.errorMessage')" type="error" show-icon mb-24px
@@ -258,7 +258,7 @@ onBeforeUnmount(() => {
     </div>
     <div :data-theme="layoutSetting.theme" fixed bottom-0 z-11 w-screen px-50px py-24px text-14px>
       <GlobalLayoutFooter
-        :copyright="layoutSetting.copyright" icp="鲁ICP备2023021414号-2"
+        :copyright="layoutSetting.copyright" icp="Lu (Shandong)ICPPrepare2023021414Number-2"
       >
         <template #renderFooterLinks>
           <footer-links />

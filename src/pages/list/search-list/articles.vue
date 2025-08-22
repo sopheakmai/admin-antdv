@@ -92,7 +92,7 @@ const list = [
     href: "https://ant.design",
     updatedAt: 1693295980201,
     createdAt: 1693295980201,
-    subDescription: "生命就像一盒巧克力，结果往往出人意料",
+    subDescription: "Life is like a box of chocolates，The results are often unexpected",
     description: "在中台产品的研发过程中，会出现不同的设计规范和实现方式，但其中往往存在很多类似的页面和组件，这些类似的组件会被抽离成一套标准规范。",
     activeUser: 191811,
     newUser: 1067,
@@ -242,7 +242,7 @@ function formatTimer(timer: number | string) {
                   {{ item.owner }}
                 </span>
                 <span c-text-tertiary>
-                  发布在
+                  Posted on
                 </span>
                 <a href="https://antdv-pro.com" c-primary hover="c-primary-hover">https://antdv-pro.com</a>
                 <span c-text-tertiary>

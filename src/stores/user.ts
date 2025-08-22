@@ -42,7 +42,7 @@ export const useUserStore = defineStore("user", () => {
   };
 
   const logout = async () => {
-    // 退出登录
+    // Log out
     // 1. 清空用户信息
     try {
       await logoutApi();

@@ -50,7 +50,7 @@ export const useAppStore = defineStore("app", () => {
     lsLocaleState.value = locale;
   };
   const toggleCompact = (isCompact = true) => {
-    // 判断是否存在compactAlgorithm
+    // Check if it existscompactAlgorithm
     if (Array.isArray(themeConfig.algorithm)) {
       const index = themeConfig.algorithm.findIndex(item => item === compactAlgorithm);
       if (index >= 0 && isCompact) {

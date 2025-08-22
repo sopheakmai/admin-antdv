@@ -23,15 +23,15 @@ const slots = defineSlots<{
   [key: string]: any;
 }>();
 /**
- * 处理展开收起的事件参数
- * @param collapsed 展开收起的事件参数
+ * Handle the event parameters of expansion and collapse
+ * @param collapsed Event parameters for expansion and collapse
  */
 function handleCollapsed(collapsed: boolean) {
   emit("update:collapsed", collapsed);
   props?.onCollapsed?.(collapsed);
 }
 
-// 依赖注入所有的配置项，对属性进行控制，减少传值
+// Dependency injects all configuration items，Control the properties，Reduce value passing
 const { layout, contentWidth } = useLayoutProvider(props, {
   handleCollapsed,
 });
@@ -59,7 +59,7 @@ const contentCls = computed(() => {
             <template v-if="slots.headerContent || layout === 'top' || layout === 'mix'" #headerContent>
               <slot name="headerContent">
                 <Menu v-if="!isMobile && layout === 'top'" />
-                <!-- 分割菜单的模式 -->
+                <!-- Split menu mode -->
                 <SplitMenu v-if="!isMobile && layout === 'mix' && props.splitMenus" />
               </slot>
             </template>

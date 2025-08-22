@@ -12,7 +12,7 @@ const { t } = useI18n();
         <a-card-meta title="Antdv Pro">
           <template #description>
             <div class="flex">
-              好好学习, 天天向上
+              Study hard, Make progress every day
             </div>
             <div class="mt-2 text-12px">
               {{ t('account.center.updated') }}

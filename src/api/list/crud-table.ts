@@ -1,15 +1,15 @@
 type CrudTableModel = {
   id?: number;
   /**
-   * 名称
+   * Name
    */
   name: string;
   /**
-   * 值
+   * Value
    */
   value: string;
   /**
-   * 描述
+   * Description
    */
   remark?: string;
 };
