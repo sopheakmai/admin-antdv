@@ -54,7 +54,7 @@ export default defineEventHandler(async (_event) => {
     },
     {
       id: 6,
-      name: "Antdv Pro",
+      name: "Lite Template",
       callNo: 2000,
       desc: "No matter when or where，itisnever too late to do what you want to do",
       status: STATUS.OFF,

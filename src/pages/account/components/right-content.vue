@@ -16,7 +16,7 @@ type IDataItem = {
 
 const data = ref<IDataItem[]>([
   {
-    title: "Antdv Pro",
+    title: "Lite Template",
     tags: ["Ant Design Vue", "Mid-to-back end", "Automation"],
     content: "AntdvProis a set of enterprise-level mid-to-back end front-endVue3、Vite4、ant-design-vue4、Pinia、UnoCSSandTypescriptdesign solutions based on/design solutions，It refers to Alibaba'sreactversionantd-prodesign patterns，and uses the latest and most popular front-end technology stacks，It has built-in dynamic routing、multi-theme、multi-layout and other features，which can help you quickly build enterprise-level mid-to-back end product prototypes。",
   },

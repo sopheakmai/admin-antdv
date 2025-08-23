@@ -36,7 +36,7 @@ export default defineEventHandler(async (_event) => {
     },
     {
       id: 6,
-      name: "Antdv Pro",
+      name: "Lite Template",
       value: "2000",
       remark: "No matter when or where，itisnever too late to do what you want to do",
     },

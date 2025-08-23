@@ -79,44 +79,6 @@ export default [
     ],
   },
   {
-    path: "/link",
-    redirect: "/link/iframe",
-    name: "Link",
-    meta: {
-      title: "Link",
-      icon: "LinkOutlined",
-    },
-    component: basicRouteMap.RouteView,
-    children: [
-      {
-        path: "/link/iframe",
-        name: "LinkIframe",
-        component: basicRouteMap.Iframe,
-        meta: {
-          title: "AntDesign",
-          url: "https://ant.design/",
-        },
-      },
-      {
-        path: "/link/antdv",
-        name: "LinkAntdv",
-        component: basicRouteMap.Iframe,
-        meta: {
-          title: "AntDesignVue",
-          url: "https://antdv.com/",
-        },
-      },
-      {
-        path: "https://www.baidu.com",
-        name: "LinkExternal",
-        meta: {
-          title: "Jump to Baidu",
-          // target: '_self',
-        },
-      },
-    ],
-  },
-  {
     path: "/menu",
     redirect: "/menu/menu1",
     name: "Menu",

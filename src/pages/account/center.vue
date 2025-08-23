@@ -44,7 +44,7 @@ type ITeamDataItem = {
 
 const teamData = ref<ITeamDataItem[]>([
   {
-    name: "Antdv Pro",
+    name: "Lite Template",
     link: "/logo.svg",
   },
   {

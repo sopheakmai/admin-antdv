@@ -59,11 +59,6 @@ const layoutProps = computed(() =>
     <template #headerActions>
       <UserAvatar />
       <SelectLang />
-      <GithubLink />
-      <template v-if="!isMobile">
-        <GiteeLink />
-        <DocLink />
-      </template>
     </template>
     <template #contentPrefix>
       <MultiTab v-if="layoutSetting.multiTab" />
@@ -71,7 +66,7 @@ const layoutProps = computed(() =>
     <template #renderFooterLinks />
     <a-watermark
       class="h-full w-full flex flex-1 flex-col"
-      :content="layoutSetting.watermark ? layoutSetting.title ?? 'Antdv Pro' : ' ' "
+      :content="layoutSetting.watermark ? layoutSetting.title ?? 'Lite Template' : ' ' "
     >
       <RouteView />
     </a-watermark>

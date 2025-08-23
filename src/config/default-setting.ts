@@ -1,7 +1,7 @@
 import type { LayoutSetting } from "~@/stores/app";
 
 export default {
-  title: "Antdv Pro",
+  title: "Lite Template",
   theme: "light",
   logo: "/logo.svg",
   collapsed: false,
@@ -26,7 +26,7 @@ export default {
   leftCollapsed: true,
   compactAlgorithm: false,
   headerHeight: 48,
-  copyright: "Antdv Pro Team 2023",
+  copyright: "Lite Template Team 2023",
   animationName: "slide-fadein-right",
 } as LayoutSetting;
 

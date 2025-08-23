@@ -1,6 +1,6 @@
 export default {
   //  Login page
-  "pages.layouts.userLayout.title": "Antdv Pro is a set of enterprise-level mid-to-back end front-endAnt Design Vuegeneral mid-platform management system",
+  "pages.layouts.userLayout.title": "Lite Template is a set of enterprise-level mid-to-back end front-endAnt Design Vuegeneral mid-platform management system",
   "pages.login.accountLogin.tab": "Account password login",
   "pages.login.accountLogin.errorMessage": "Incorrect username and password(admin/admin)",
   "pages.login.failure": "Login failed，Please try again！",

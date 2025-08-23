@@ -121,7 +121,7 @@ onBeforeUnmount(() => {
               <img h-full w-full object-cover src="/logo.svg">
             </span>
             <span class="ant-pro-form-login-title">
-              Antdv Pro
+              Lite Template
             </span>
             <span class="ant-pro-form-login-desc">
               {{ t("pages.layouts.userLayout.title") }}

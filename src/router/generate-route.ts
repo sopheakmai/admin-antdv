@@ -199,7 +199,7 @@ function flatRoutes(routes: RouteRecordRaw[], parentName?: string, parentComps: 
 
 export function generateFlatRoutes(routes: RouteRecordRaw[]) {
   const flatRoutesList = flatRoutes(routes);
-  // 拿到拉平后的路由，然后统一添加一个父级的路由,Implement the keep-alive function through this layer of routing
+  // Get the flattened route and then add a parent route uniformly ,Implement the keep-alive function through this layer of routing
   const parentRoute: RouteRecordRaw = {
     path: "/",
     redirect: ROOT_ROUTE_REDIRECT_PATH,

@@ -57,7 +57,7 @@ export default defineEventHandler(async (_event) => {
       content: "Hope is a beautiful thing，Maybe the best of things",
     },
     {
-      title: "Antdv Pro",
+      title: "Lite Template",
       link: "/logo.svg",
       percent: 80,
       status: "active",
