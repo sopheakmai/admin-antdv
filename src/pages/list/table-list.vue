@@ -17,14 +17,14 @@ const columns = shallowRef([
     title: "#",
     dataIndex: "id",
   },
-  {
-    title: "Rule name",
-    dataIndex: "name",
-  },
-  {
-    title: "Description",
-    dataIndex: "desc",
-  },
+  // {
+  //   title: "Rule name",
+  //   dataIndex: "name",
+  // },
+  // {
+  //   title: "Description",
+  //   dataIndex: "desc",
+  // },
   {
     title: "Service call count",
     dataIndex: "callNo",
