@@ -6,7 +6,7 @@ import type { ConsultTableModel, ConsultTableParams } from "~@/api/list/table-li
 import { deleteApi, getListApi } from "~@/api/list/table-list";
 
 const statusMap = {
-  0: "Close",
+  0: "Closed",
   1: "Running",
   2: "Online",
   3: "Error",
