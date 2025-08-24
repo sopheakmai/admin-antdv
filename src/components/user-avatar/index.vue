@@ -6,7 +6,7 @@ const userStore = useUserStore();
 const multiTabStore = useMultiTab();
 const layoutMenuStore = useLayoutMenu();
 const router = useRouter();
-const { avatar, nickname } = storeToRefs(userStore);
+const { avatar } = storeToRefs(userStore);
 async function handleClick({ key }: any) {
   if (key === "logout") {
     const hide = message.loading("Log out...", 0);
@@ -31,7 +31,7 @@ async function handleClick({ key }: any) {
   <a-dropdown>
     <span hover="bg-[var(--hover-color)]" h-48px flex cursor-pointer items-center px-12px class="transition-all-300">
       <a-avatar :src="avatar" mr-8px size="small" />
-      <span class="anticon">{{ nickname }}</span>
+      <span class="anticon">admin</span>
     </span>
     <template #overlay>
       <a-menu @click="handleClick">

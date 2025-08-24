@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import GlobalLayoutFooter from "~/layouts/components/global-footer/index.vue";
 import { LockOutlined, MobileOutlined, UserOutlined } from "@ant-design/icons-vue";
-import { delayTimer } from "@/utils/helper";
 import { AxiosError } from "axios";
 import { loginApi } from "~/api/common/login";
 import { getQueryParam } from "~/utils/tools";
 import type { LoginMobileParams, LoginParams } from "~@/api/common/login";
-import pageBubble from "@/utils/page-bubble";
 
 const appStore = useAppStore();
 const { layoutSetting } = storeToRefs(appStore);
@@ -29,7 +27,6 @@ const codeLoading = shallowRef(false);
 const resetCounter = 60;
 const submitLoading = shallowRef(false);
 const errorAlert = shallowRef(false);
-const bubbleCanvas = ref<HTMLCanvasElement>();
 const { counter, pause, reset, resume, isActive } = useInterval(1000, {
   controls: true,
   immediate: false,
@@ -96,14 +93,6 @@ async function submit() {
     submitLoading.value = false;
   }
 }
-onMounted(async () => {
-  await delayTimer(300);
-  pageBubble.init(unref(bubbleCanvas)!);
-});
-
-onBeforeUnmount(() => {
-  pageBubble.removeListeners();
-});
 </script>
 
 <template>
