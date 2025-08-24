@@ -12,13 +12,16 @@ const routerModules = import.meta.glob([
   "!~/pages/**/test",
   "!~/pages/common",
 ]);
+
 export const basicRouteMap = {
   // Used in iframe mode
-  Iframe: () => import("~/pages/common/iframe.vue"),
+  Iframe: () => import("~/layouts/components/iframe-view.vue"),
   // Generally used for pages with subsets
   RouteView: () => import("~/layouts/components/route-view.vue"),
+  // Error page
+  ComponentError: () => import("~/layouts/components/component-error.vue"),
   // Empty page
-  ComponentError: () => import("~/pages/exception/component-error.vue"),
+  EmptyView: () => import("~/layouts/components/empty-view.vue"),
 };
 
 function checkEager(module: any) {

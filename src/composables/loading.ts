@@ -18,3 +18,14 @@ export function useScrollToTop() {
     }, 300);
   }
 }
+
+export function useLoading(defaultLoading = false) {
+  const loading = ref(defaultLoading);
+  const setLoading = (value: boolean) => {
+    loading.value = value;
+  };
+  return {
+    loading,
+    setLoading,
+  };
+}

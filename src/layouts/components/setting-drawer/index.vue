@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { CloseOutlined, SettingOutlined } from "@ant-design/icons-vue";
-import { useClipboard } from "@/utils/helper";
+// import { useClipboard } from "@/utils/helper";
 import type { ContentWidth, LayoutType, ThemeType } from "../../basic-layout/typing";
 import Body from "./body.vue";
 import BlockCheckbox from "./block-checkbox.vue";
@@ -54,13 +54,13 @@ const props = withDefaults(
   },
 );
 const emit = defineEmits(["update:open", "settingChange"]);
-const { copy } = useClipboard();
+// const { copy } = useClipboard();
 const prefixCls = shallowRef("ant-pro-drawer-setting");
-const { message } = useGlobalConfig();
-function copySetting() {
-  copy(JSON.stringify(props.layoutSetting ?? {}));
-  message?.success(props?.t?.("app.setting.copyinfo", "Successfully copied，Please go to config/default-settings.js to replace the default configuration"));
-}
+// const { message } = useGlobalConfig();
+// function copySetting() {
+//   copy(JSON.stringify(props.layoutSetting ?? {}));
+//   message?.success(props?.t?.("app.setting.copyinfo", "Successfully copied，Please go to config/default-settings.js to replace the default configuration"));
+// }
 function handleVisible(open: boolean) {
   emit("update:open", open);
 }
@@ -76,9 +76,9 @@ function changeColor(color: string) {
 function changeLayout(layout: string) {
   emit("settingChange", "layout", layout);
 }
-function changeSettingLayout(key: string, value: any) {
-  emit("settingChange", key, value);
-}
+// function _changeSettingLayout(key: string, value: any) {
+//   emit("settingChange", key, value);
+// }
 
 const { token } = useAntdToken();
 </script>
