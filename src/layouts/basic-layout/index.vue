@@ -73,11 +73,7 @@ const contentCls = computed(() => {
         </a-layout-content>
         <a-layout-footer v-if="footer" style="background-color: transparent;">
           <slot name="footerRender">
-            <GlobalFooter :copyright="copyright">
-              <template v-if="slots.renderFooterLinks" #renderFooterLinks>
-                <footer-links />
-              </template>
-            </GlobalFooter>
+            <GlobalFooter :copyright="copyright" />
           </slot>
         </a-layout-footer>
       </a-layout>

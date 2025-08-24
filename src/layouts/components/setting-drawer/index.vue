@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { CloseOutlined, CopyOutlined, NotificationOutlined, SettingOutlined } from "@ant-design/icons-vue";
+import { CloseOutlined, SettingOutlined } from "@ant-design/icons-vue";
 import { useClipboard } from "@/utils/helper";
 import type { ContentWidth, LayoutType, ThemeType } from "../../basic-layout/typing";
 import Body from "./body.vue";
 import BlockCheckbox from "./block-checkbox.vue";
 import ThemeColor from "./theme-color.vue";
-import LayoutSetting from "./layout-setting.vue";
-import RegionalSetting from "./regional-setting.vue";
-import OtherSetting from "./other-setting.vue";
 
 defineOptions({
   name: "SettingDrawer",
@@ -189,7 +186,7 @@ const { token } = useAntdToken();
           />
         </div>
       </Body>
-      <LayoutSetting
+      <!-- <LayoutSetting
         :layout="layout"
         :t="t"
         :content-width="contentWidth"
@@ -242,7 +239,7 @@ const { token } = useAntdToken();
             <CopyOutlined /> {{ t?.('app.setting.copy', 'Copy settings') }}
           </a-button>
         </div>
-      </Body>
+      </Body> -->
     </div>
   </a-drawer>
 </template>

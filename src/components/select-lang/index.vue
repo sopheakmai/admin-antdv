@@ -12,14 +12,14 @@ function handleClick({ key }: any) {
     </span>
     <template #overlay>
       <a-menu :selected-keys="[locale]" @click="handleClick">
-        <a-menu-item key="zh-CN">
+        <!-- <a-menu-item key="zh-CN">
           <template #icon>
             <span>
               🇨🇳
             </span>
           </template>
           Simplified Chinese
-        </a-menu-item>
+        </a-menu-item> -->
         <a-menu-item key="en-US">
           <template #icon>
             <span>

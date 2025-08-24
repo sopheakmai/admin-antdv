@@ -258,12 +258,9 @@ onBeforeUnmount(() => {
     </div>
     <div :data-theme="layoutSetting.theme" fixed bottom-0 z-11 w-screen px-50px py-24px text-14px>
       <GlobalLayoutFooter
-        :copyright="layoutSetting.copyright" icp="Lu (Shandong)ICPPrepare2023021414Number-2"
-      >
-        <template #renderFooterLinks>
-          <footer-links />
-        </template>
-      </GlobalLayoutFooter>
+        :copyright="layoutSetting.copyright"
+        icp="company"
+      />
     </div>
   </div>
 </template>

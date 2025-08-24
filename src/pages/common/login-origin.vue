@@ -206,11 +206,7 @@ async function submit() {
       </div>
     </div>
     <div :data-theme="layoutSetting.theme" px-50px py-24px text-14px>
-      <GlobalLayoutFooter :copyright="layoutSetting.copyright">
-        <template #renderFooterLinks>
-          <footer-links />
-        </template>
-      </GlobalLayoutFooter>
+      <GlobalLayoutFooter :copyright="layoutSetting.copyright" />
     </div>
   </div>
 </template>

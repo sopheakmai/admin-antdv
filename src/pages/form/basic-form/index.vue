@@ -160,5 +160,15 @@ const { t } = useI18n();
         </a-form-item>
       </a-form>
     </a-card>
+    <FooterToolBar>
+      <template #left>
+        Test
+      </template>
+      <template #right>
+        <a-button type="primary" @click="handleSubmit">
+          Submit
+        </a-button>
+      </template>
+    </FooterToolBar>
   </page-container>
 </template>
